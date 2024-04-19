@@ -1,0 +1,131 @@
+.NEWS{
+    
+    width: 90%;
+    background-color: #232323;
+    border: 1px solid white;
+    height: fit-content;
+    margin: 1vw 0vw;
+
+}
+.NEWS .BLC1{
+    width: 100%;
+    height: 42.66%;
+    position: relative;
+
+}
+.NEWS .BLC1 .IMG{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.NEWS .BLC1 .IMG img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+.NEWS .BLC1 .IMG .cont-title{
+    position: absolute;
+    width: fit-content;
+    height:fit-content;
+    margin: auto;
+    background: rgba(7, 7, 7, 0.8);
+    display: flex;
+    align-items: center;
+    padding: 2vw;
+    justify-content: center;
+}
+.NEWS .BLC1 .IMG .cont-title h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2vw;
+    text-align: center;
+    color: #FFFFFF;
+}
+.NEWS .BLC2{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.NEWS .BLC2 .TEXT-BLOC{
+    width: 100%;
+    height: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+
+}
+.NEWS .BLC2 .TEXT-BLOC .sub-title{
+    width: 80%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.8vw;
+}
+.NEWS .BLC2 .TEXT-BLOC .sub-title h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8vw;
+    text-align: center;
+    color: #FFFFFF;
+}
+.NEWS .BLC2 .TEXT-BLOC .desc{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NEWS .BLC2 .TEXT-BLOC .desc p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.NEWS .BLC2 .author{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.NEWS .BLC2 .author h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 600px) and (min-width: 300px){
+    .NEWS .BLC1 .IMG .cont-title h1{
+        font-size: 6vw;
+    }
+    .NEWS .BLC2 .TEXT-BLOC .sub-title h1{
+        font-size: 4vw;
+    }
+    .NEWS .BLC2 .TEXT-BLOC .desc p{
+        font-size: 3.5vw;
+    }
+    .NEWS .BLC2 .author h2{
+        font-size: 3vw;
+    }
+}

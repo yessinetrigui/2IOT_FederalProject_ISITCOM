@@ -1,0 +1,561 @@
+/***********  STYLE OF  MAIN NAV **********************/
+.main-nav{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+/*! ******************************************************/
+/*!  ************   Guest NAV BAR STYLE        **********************/
+/*! ******************************************************/
+
+/*?tyle of the P1 WHICH IS THE SECTION OF LOGO */
+.main-nav .sub-nav_P1{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-nav .sub-nav_P1 .logo{
+    height: 100%;
+    filter: drop-shadow(.5px .5px 0.5px white);
+}
+
+/*?Style of the PaRT 2 WHICH IS THE SECTION OF Login and settings icon */
+.main-nav .sub-navGuest{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+/**login Button */
+
+.main-nav .sub-navGuest .btn-space {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 8px;
+}
+.main-nav .sub-navGuest .btn-space .btn{
+    display: block;
+    width: 130px;
+    height: 45px;
+    background: linear-gradient(270deg, #913496 10.81%, rgba(231, 0, 243, 0.78) 100%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-duration: .5s;
+    cursor: pointer;
+}
+.main-nav .sub-navGuest .btn-space .btn .ico{
+    width: 20%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: invert(1);
+}
+.main-nav .sub-navGuest .btn-space .btn .text-btn{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-nav .sub-navGuest .btn-space .btn .text-btn a{
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    user-select: none;
+}
+.main-nav .sub-navGuest .btn-space .btn:hover{
+    background: linear-gradient(50deg, #be12c7 10.81%, rgba(230, 37, 240, 0.78) 100%);
+    animation-duration: 1s;
+}
+
+/**Settings Ico 
+.main-nav .sub-navGuest .settings-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8px;
+    width: 2vw;
+    padding-right: 8%;
+}
+.main-nav .sub-navGuest .settings-space .ico{
+    filter: invert(1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-nav .sub-navGuest .settings-space .ico:hover{
+    transition-duration: 1.5s;
+}
+*/
+/** style of phone use navbar* */
+.ph-sub-navGuest img{
+    width: 5vw;
+    height: 5vw;
+    filter: invert(1);
+}
+
+@keyframes settings-rotate {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(360deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+
+/*! ************************************************************************************************************/
+/*! ************************************************************************************************************/
+/*! ***********************************************************************************************************/
+/*!  ************  ************************  USER NAV BAR STYLE        **********************************/
+/*! *********************************************************************************************************/
+/*! ************************************************************************************************************/
+/*! ************************************************************************************************************/
+.main-nav .UserNav{
+    color: aqua !important;
+    /*background-color: red;*/
+    width: 90vw;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.main-nav .UserNav div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-nav .UserNav .sub-nav-logo{
+    width: 8%;
+    /*background-color: azure;*/
+}
+.main-nav .UserNav .sub-nav-links{
+    width: 77%;
+    /*background-color: blueviolet;*/
+}
+.main-nav .UserNav .sub-nav-notiprof{
+    width: 15%;
+    /*background-color: coral;*/
+}
+/**************** Style Of logo container ******************/
+.main-nav .UserNav .sub-nav-logo .logo-cont{
+   /* background-color: deeppink;*/
+   filter: drop-shadow(.5px .5px 0.5px white);
+    width: 45%;
+}
+
+/**************** Style of links and download link of the nav bar ********/
+.main-nav .UserNav .sub-nav-links .part1{
+    width: 75%;
+  /*  background-color: darkcyan;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main-nav .UserNav .sub-nav-links .part1 .items{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+.main-nav .UserNav .sub-nav-links .part1 .item{
+    margin: 0px 0.9vw;
+    height: 100%;
+}
+.main-nav .UserNav .sub-nav-links .part1 .item a{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+   /* background-color: khaki;*/
+    height: 100%;
+    padding: 0px 0.2vw;
+    position: relative;
+
+}
+.main-nav .UserNav .sub-nav-links .part1 .item a .ico{
+    width: 1.2vw;
+    filter: invert(1);
+    z-index: 2;
+
+}
+.main-nav .UserNav .sub-nav-links .part1 .item a .txt{
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-left: .3vw;
+    z-index: 2;
+}
+.main-nav .UserNav .sub-nav-links .part1 .item a .line{
+    position: absolute;
+    background: #B10DC9;
+    height: 28%;
+    width: 0%;
+    bottom: -3px;
+    z-index: 1;
+}
+
+
+
+/*?PART 2  of links this part about download launcher*/
+.main-nav .UserNav .sub-nav-links .part2{
+    width: 25%;
+  /*  background-color: darkred;*/
+  justify-content: flex-end;
+}
+.main-nav .UserNav .sub-nav-links .part2 .btn{
+    width: 70%;
+    background: linear-gradient(180deg, #E407F0 0%, #B242BB 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0px;
+    height: 9vh;
+}
+
+.main-nav .UserNav .sub-nav-links .part2 .btn .txt{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/**************** Style of links and Notification of the Profile icon ********/
+.main-nav .UserNav .sub-nav-notiprof {
+    justify-content: space-around;
+}
+.main-nav .UserNav .sub-nav-notiprof .part1{
+    width: 22%;
+    /* background-color: rgb(125, 139, 0);*/
+    position: relative;
+}
+.main-nav .UserNav .sub-nav-notiprof .part1 img{
+    filter: invert(1);
+    height: 2vw;
+    position: absolute;
+    cursor: pointer;
+}
+.main-nav .UserNav .sub-nav-notiprof .part1 .num {
+    color: white;
+    position: absolute;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background: #B10DC9;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 1.1vw;
+    right: 8px;
+    font-family: 'Righteous';
+    bottom: -3px;
+    padding: 2px 6px;
+}
+
+.main-nav .UserNav .sub-nav-notiprof .part2{
+    width: 60%;
+   justify-content:flex-start;
+}
+.main-nav .UserNav .sub-nav-notiprof .part2 img{
+    width: 33%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+@keyframes bell-anim {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    30%{
+        transform: rotateZ(50deg);
+    }
+    60%{
+        transform: rotateZ(-50deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes profile-shine {
+    0%{
+        border: none;
+    }
+    30%{
+        box-shadow: 0px 0px 12px 3px #da7cdf;
+    }
+    60%{
+        box-shadow: 4px 4px 12px 3px #da7cdf;
+    }
+    100%{
+        border: none;
+    }
+}
+
+
+/*
+.user-drop{
+    position: fixed;
+    width: 100px;
+    height: 200px;
+    background-color: #E407F0;
+    border: 2px solid black;
+}
+*/
+/*! Styele of the drop mobile  NAV-bar ***/
+.drop-mobile{
+    display: none;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.drop-mobile #BLC1{
+    width: 60%;
+    height: 29%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+} 
+.drop-mobile #BLC1 .part1{ 
+    font-size: 2vw;
+    color: rgb(255, 255, 255);
+    font-size: 8.2vw;
+    font-family: 'Poppins';
+}
+.drop-mobile #BLC1 .part2{  
+    display: flex;
+    justify-content: center;
+    height: auto;
+    z-index: 2;
+}
+.drop-mobile #BLC1 .part2 img{
+    width: 33%;
+    border-radius: 50%;
+}
+.drop-mobile #BLC1 .box{
+    display: none;
+    visibility: hidden;
+    width: 77%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+    border-radius: 3%;
+    margin-top: -5%;
+} 
+.drop-mobile #BLC1 .box ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+}
+.drop-mobile #BLC1 .box ul li a {
+    display: flex;
+    justify-content: center;
+}
+.drop-mobile #BLC1 .box ul li a .ico{
+    width: 10%;
+}
+.drop-mobile #BLC1 .box ul li a .ico img{
+    height: 100%;
+    width: 100%;
+}
+.drop-mobile #BLC1 .box ul li a .txt{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.065em;
+    margin-left: 0.5vw;
+    color: #000000;
+}
+.drop-mobile #BLC2{
+    height: 30%;
+}
+.drop-mobile #BLC2 .items{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.drop-mobile #BLC2 .items .item a{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+.drop-mobile #BLC2 .items .item a .ico{
+    width: 4.2vw;
+    filter: invert(1);
+    z-index: 2;
+}
+.drop-mobile #BLC2 .items .item a .txt{
+    font-family: Righteous;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 27px;
+    color: #FFFFFF;
+    padding-left: .3vw;
+    z-index: 2;
+} 
+
+/*! Styele of the drop pc  NAV-bar ***/
+.drop-pc{
+    display: none;
+    visibility: hidden;
+    width: 189px;
+    height: 250px;
+    border: 0.8px solid black;
+    background-color: #ffffff;
+    position: absolute;
+    right: 9%;
+    top: 8%;
+    z-index: 3;
+}
+.drop-pc ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+.drop-pc ul li a {
+    display: flex;
+    padding-left: 16%;
+    justify-content: flex-start;
+}
+.drop-pc ul li a .ico{
+    width: 10%;
+}
+.drop-pc ul li a .ico img{
+    height: 100%;
+    width: 100%;
+}
+.drop-pc ul li a .txt{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 27px;
+    letter-spacing: 0.065em;
+    margin-left: 0.5vw;
+    color: #000000;
+
+}
+.drop-pc ul li a .txt:hover{
+    font-weight: bolder;
+    color: #B10DC9;
+    text-decoration: underline 1px #B10DC9;
+
+}
+/*! Styele of the drop notification  NAV-bar ***/
+.drop-pc-notif{
+    display: none;
+    visibility: hidden;
+    width: 272px;
+    height: 142px;
+    border: .5px solid black;
+    background-color: #FFFFFF;
+    position: absolute;
+    right: 13%;
+    top: 9%;
+    padding: 1vw;
+    z-index: 1;
+}
+.drop-pc-notif h1{
+    text-align: left;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 0.065em;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration:  6px underline #B242BB;
+}
+.drop-pc-notif h2{
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.065em;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 0.6vw;
+}
+/*?? RESPONSIVE OF NAV */
+@media screen and (min-width: 1000px) {
+    .ph-sub-navGuest{
+        display: none;
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 1000px) {
+    /* ****  HIDE THE NAV BAR OF GUEST*/
+
+    /* ****  HIDE THE NAV BAR OF Users*/
+    .sub-nav-links , .sub-nav-notiprof{
+        display: none !important;
+        visibility: hidden  !important;
+    }
+
+    .main-nav {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        height: inherit;
+        align-items: center;
+        user-select: none;
+        padding: 1.5vw 0px;
+    }
+    .main-nav .UserNav {
+        justify-content: space-between;
+    }
+    .main-nav .UserNav .sub-nav-logo .logo-cont {
+        width: 85% !important;
+    }
+    .main-nav .UserNav .sub-nav-logo {
+        width: initial;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .ph-sub-navGuest img{
+        width: 8vw;
+        height: 8vw;
+    }
+
+
+    .main-nav .UserNav .sub-nav-logo .logo-cont {
+        width: 85% !important;
+    }
+}

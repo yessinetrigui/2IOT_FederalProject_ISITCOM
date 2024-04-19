@@ -1,0 +1,297 @@
+.EVENTS{
+    width: 95%;
+    height: 600px;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #232323;
+    border: 0.3px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 4px 8px 29px rgba(255, 255, 255, 0.12);
+    margin: 2vw 0vw;
+
+}
+.EVENTS .BLC{
+    height: 100%;
+}
+.EVENTS #BLC1{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.EVENTS #BLC1 img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+.EVENTS #BLC2{
+    width: 58%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.EVENTS #BLC2 .sub-blc{
+    width: 100%;
+}
+.EVENTS #BLC2 #sub-blc1{
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.EVENTS #BLC2 #sub-blc1 .text{
+    width: 80%;
+    height: 100%;
+    position: relative;
+}
+.EVENTS #BLC2 #sub-blc1 .text #title{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 10%;
+    left: 0;
+}
+.EVENTS #BLC2 #sub-blc1 .text #title h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vw;
+    color: #ffffff;
+}
+.EVENTS #BLC2 #sub-blc1 .text #sub-title{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+}
+.EVENTS #BLC2 #sub-blc1 .text #sub-title h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 1.7vw;
+    color: #ffffff;
+}
+.EVENTS #BLC2 #sub-blc2{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.EVENTS #BLC2 #sub-blc2 #desc{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.EVENTS #BLC2 #sub-blc2 #desc p{
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1vw;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+
+
+}
+.EVENTS #BLC2 #sub-blc2 #info{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.EVENTS #BLC2 #sub-blc2 #info .cont-inf{
+    width: 32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.EVENTS #BLC2 #sub-blc2 #info .cont-inf #cont1{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.EVENTS #BLC2 #sub-blc2 #info .cont-inf #cont1 .txt{
+    width: auto;
+    height: 100%;
+    padding-left: 0.6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.EVENTS #BLC2 #sub-blc2 #info .cont-inf #cont1 .txt h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vw;
+    color: #ffffff;
+}
+.EVENTS #BLC2 #sub-blc2 #info .cont-inf #cont1 .ico{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: invert(1);
+}
+.EVENTS #BLC2 #sub-blc2 #info .cont-inf #cont2 .txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.EVENTS #BLC2 #sub-blc2 #info .cont-inf #cont2 .txt h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3vw;
+    color: #ffffff;
+}
+
+
+
+.EVENTS #BLC2 #sub-blc2 #info #inf2{
+    width: 32%;
+    height: 100%;
+}
+
+
+.EVENTS #BLC2 #sub-blc3{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.EVENTS #BLC2 #sub-blc3 h1{
+    font-family: 'Open sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    color: #ffffff;
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 700px){
+    .EVENTS{
+    flex-direction: column;
+    }
+    .EVENTS #BLC1{
+        width: 100%;
+        height: 40%;
+    }
+    .EVENTS #BLC2{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .EVENTS #BLC2 #sub-blc1{
+        width: 100%;
+        justify-content: center;
+    }
+    .EVENTS #BLC2 #sub-blc1 .text #title h1{
+        font-size: 4.1vw;
+    }
+    .EVENTS #BLC2 #sub-blc1 .text #title {
+        position: inherit;
+    }
+    .EVENTS #BLC2 #sub-blc1 .text #sub-title {
+        position: inherit;
+    }
+    .EVENTS #BLC2 #sub-blc1 .text #sub-title h1{
+        font-size: 3.2vw;
+    }
+    .EVENTS #BLC2 #sub-blc2 #desc p{
+        font-size: 2.1vw;
+        line-height: normal;
+    }
+    .EVENTS #BLC2 #sub-blc2 #info .cont-inf #cont1 .txt h1{
+        font-size: 3.1vw;
+    }
+    .EVENTS #BLC2 #sub-blc2 #info .cont-inf #cont2 .txt h1{
+        font-size: 2.8vw;
+    }
+    .EVENTS #BLC2 #sub-blc3 h1{
+        font-size: 2vw;
+    }
+    
+    
+}
+
+
+
+@media screen and (max-width: 700px) and (min-width: 300px){
+    .EVENTS{
+    flex-direction: column;
+    height: fit-content;
+    }
+    .EVENTS #BLC1{
+        width: 100%;
+        height: 300px;
+    }
+    .EVENTS #BLC2{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .EVENTS #BLC2 #sub-blc{
+        margin: 0.8vw 0%;
+    }
+    .EVENTS #BLC2 #sub-blc1{
+        width: 100%;
+        justify-content: center;
+    }
+    .EVENTS #BLC2 #sub-blc1 .text{
+        margin: 0.8vw 0%;
+    }
+    .EVENTS #BLC2 #sub-blc1 .text #title h1{
+        font-size: 4.1vw;
+    }
+    .EVENTS #BLC2 #sub-blc1 .text #title {
+        position: inherit;
+    }
+    .EVENTS #BLC2 #sub-blc1 .text #sub-title {
+        position: inherit;
+    }
+    .EVENTS #BLC2 #sub-blc1 .text #sub-title h1{
+        font-size: 3.2vw;
+    }
+    .EVENTS #BLC2 #sub-blc2 #desc p{
+        font-size: 3.1vw;
+        line-height: normal;
+    }
+    .EVENTS #BLC2 #sub-blc2 #info .cont-inf{
+        margin: 1.2vw 0%;
+    }
+    .EVENTS #BLC2 #sub-blc2 #info .cont-inf #cont1 .txt h1{
+        font-size: 3.1vw;
+    }
+    .EVENTS #BLC2 #sub-blc2 #info .cont-inf #cont1 .ico img{
+        width: 80%;
+    }
+    .EVENTS #BLC2 #sub-blc2 #info .cont-inf #cont2 .txt h1{
+        font-size: 2.8vw;
+    }
+    .EVENTS #BLC2 #sub-blc3 h1{
+        font-size: 2vw;
+    }
+    
+    
+}

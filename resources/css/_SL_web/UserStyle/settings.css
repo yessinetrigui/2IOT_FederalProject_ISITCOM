@@ -1,0 +1,78 @@
+#settings{
+    width: 90%;
+    height: 80vh;
+    background-color: #00000069;
+    border-radius: 8px;
+    border: 3px solid white;
+
+}
+#settings #set{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#settings #set .sec{
+    height: 20%;
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+    border-radius: 11px;
+}
+#settings #set .sec #title{
+    display: block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vw;
+    text-align: center;
+    color: #d4d4d4;
+    text-decoration: underline violet;
+}
+#settings #set .sec #answer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#settings #set .sec #answer input[type='radio']{
+    width: 15px;
+    height: 15px;
+}
+#settings #set .sec #answer label{
+    display: block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4vw;
+    text-align: center;
+    color: #ffffffd9;
+    margin-left: 0.5vw;
+}
+
+
+
+#settings #set #send{
+    margin-top: 0.8vw;
+    width: 22%;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #701F7C;
+    border: 1.5px solid #ffffff;
+    border-radius: 5px;
+    font-family: 'NTR';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8vw;
+    color: #FFFFFF;
+    user-select: none;
+    cursor: pointer;
+}

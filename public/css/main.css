@@ -1,0 +1,1684 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+#HomePage .header{
+   /* background-color: aqua;*/
+    background-image: url("/assets/img/home-page/bg-home-page.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#HomePage .header .BLC1{
+    width: 70%;
+  /*/  background-color: red;*/
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HomePage .header .BLC1 .title{
+    width: 80%;
+ /*   background-color: rgb(119, 10, 10);*/
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#HomePage .header .BLC1 .title .main-text{
+    width: 100%;
+  /*  background-color: rgb(214, 83, 83);*/
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#HomePage .header .BLC1 .title .main-text .text{
+    width: 100%;
+  /*  background-color: rgb(29, 207, 83);*/
+    height: 50%;
+    text-align: center;
+    z-index: 2;
+}
+#HomePage .header .BLC1 .title .main-text .text h1{
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 7.5vw;
+    line-height: 186px;
+    color: #FFFFFF;
+}
+#HomePage .header .BLC1 .title .main-text .line{
+    width: 60%;
+    background-color: #9B3FA1;
+    height: 30%;
+    z-index: 1;
+}
+#HomePage .header .BLC1 .title .sub-text{
+    width: 100%;
+  /*  background-color: rgb(60, 117, 150);*/
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HomePage .header .BLC1 .title .sub-text h1{
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.3vw;
+    line-height: 90px;
+    color: #FFFFFF;
+}
+
+#HomePage .header .BLC2{    
+    width: 90%;
+  /*  background-color: green;*/
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#HomePage .header .BLC2 .bloc-info{    
+    width: 90%;
+    background-color: #111111;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px dashed white;
+}
+#HomePage .header .BLC2 .bloc-info .sub-blc1{
+    width: 30%;
+    height: 100%;
+    /*background-color: rgb(255, 47, 220);*/
+}
+#HomePage .header .BLC2 .bloc-info .sub-blc2{
+    width: 30%;
+    height: 100%;
+   /* background-color: rgb(99, 4, 99);*/
+    border-right: 2px dashed white;
+    border-left: 2px dashed white;
+}
+#HomePage .header .BLC2 .bloc-info .sub-blc3{
+    width: 30%;
+    height: 100%;
+   /* background-color: rgb(179, 124, 184);*/
+   border-right: 2px dashed white;
+}
+
+#HomePage .header .BLC2 .bloc-info .sub-blc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+#HomePage .header .BLC2 .bloc-info .sub-blc .title{
+    width: 90%;
+    height: 20%;
+   /* background-color: rgb(209, 83, 45);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HomePage .header .BLC2 .bloc-info .sub-blc .title h1{
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8vw;
+    line-height: 2vw;
+    color: #ffffff;
+    text-decoration: underline 0.3vw rgb(184, 47, 226);
+}
+#HomePage .header .BLC2 .bloc-info .sub-blc .desc .shape{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(102, 255, 0);
+    margin-right: 0.5vw;
+}
+#HomePage .header .BLC2 .bloc-info .sub-blc .desc{
+    width: 90%;
+    height: 30%;
+   /* background-color: rgb(122, 39, 13);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HomePage .header .BLC2 .bloc-info .sub-blc .desc h1{
+    text-align: center;
+    font-family: 'poppins', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2vw;
+    color: #FFFFFF;
+}
+#HomePage .header .BLC2 .follow-us{    
+    width: 90%;
+  /*  background-color: rgb(197, 194, 12);*/
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HomePage .header .BLC2 .follow-us .main-cont{    
+    width: 60%;
+    height: 100%;
+   /* background-color: indigo;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#HomePage .header .BLC2 .follow-us .main-cont .sub-cont1{
+    width: 30%;
+    height: 1.5%;
+    background-color: rgb(255, 255, 255);
+}
+#HomePage .header .BLC2 .follow-us .main-cont .sub-cont2{
+    width: 40%;
+    height: 100%;
+   /* background-color: rgb(36, 175, 145);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#HomePage .header .BLC2 .follow-us .main-cont .sub-cont2 .text{
+    width: 100%;
+    height: 35%;
+   /* background-color: rgb(155, 37, 223);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HomePage .header .BLC2 .follow-us .main-cont .sub-cont2 .text h1{
+    text-align: center;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5vw;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+#HomePage .header .BLC2 .follow-us .main-cont .sub-cont2 .icons{
+    width: 100%;
+    height: 50%;
+  /*  background-color: rgb(134, 0, 151);*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#HomePage .header .BLC2 .follow-us .main-cont .sub-cont2 .icons .mini-ico{
+    width: 10%;
+    height: 100%;
+   /* background-color: rgb(192, 139, 199);*/
+}
+#HomePage .header .BLC2 .follow-us .main-cont .sub-cont2 .icons .mini-ico img{
+    filter: invert(1);
+}
+
+#HomePage .header .BLC2 .follow-us .main-cont .sub-cont3{
+    width: 30%;
+    height: 1.5%;
+   background-color: rgb(255, 255, 255);
+}
+
+/********************************************************************/
+/********************************************************************/
+/********************************************************************/
+
+#HomePage #SEC-1{
+    width: 100%;
+    height: fit-content;
+    background-color:  #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#HomePage #SEC-1 #BLC-1{
+    width: 80%;
+    height: 40%;
+    /*background-color: rgb(255, 123, 0);*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#HomePage #SEC-1 #BLC-1 .sub-blc{
+    width: 30%;
+    height: 100%;
+  /*  background-color: rgb(190, 147, 106);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#HomePage #SEC-1 #BLC-1 .sub-blc .icon{
+    width: auto;
+    height: auto;
+   /* background-color: rgb(105, 197, 224);*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#HomePage #SEC-1 #BLC-1 .sub-blc .text{
+    width: 80%;
+    height: 40%;
+   /* background-color: rgb(28, 90, 109);*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#HomePage #SEC-1 #BLC-1 .sub-blc .text h1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.7vw;
+    color: #FFFFFF;
+}
+#HomePage #SEC-1 #BLC-2{
+    width: 80%;
+    height: 35%;
+  /*  background-color: rgb(150, 81, 16);*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#HomePage #SEC-1 #BLC-2 .sub-blc{
+    width: 30%;
+    height: 100%;
+    /*background-color: rgb(78, 43, 9);*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+#HomePage #SEC-1 #BLC-2 .sub-blc .mini-line{
+    height: 25%;
+    /*background-color: red;*/
+}
+#HomePage #SEC-1 #BLC-2 .sub-blc .sub-content{
+    height: 45%;
+    width: 100%;
+   /* background-color: rgb(102, 11, 11);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HomePage #SEC-1 #BLC-2 .sub-blc .sub-content h1{
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2vw;
+    color: #FFFFFF;
+}
+
+/********************************************************************/
+/********************************************************************/
+/********************************************************************/
+#HomePage #SEC-2{
+    width: 100%;
+    height: 118vh;
+    background-color: rgb(184, 47, 226);
+}
+#HomePage #SEC-2 #sub-sec-1{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(106, 3, 138);
+    background-image: url("/assets/img/home-page/cont1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HomePage #SEC-2 #sub-sec-1 .content{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HomePage #SEC-2 #sub-sec-1 .content .text{
+    text-align: center;
+    width: auto;
+    height: 30%;
+    margin-right: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HomePage #SEC-2 #sub-sec-1 .content .text h1{
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2vw;
+    color: #FFFFFF;
+}
+#HomePage #SEC-2 #sub-sec-1 .content .btn{
+    width: 14%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #701F7C;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'NTR';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8vw;
+    color: #FFFFFF;
+    user-select: none;
+    cursor: crosshair;
+}
+#HomePage #SEC-2 #sub-sec-2{
+    width: 100%;
+    height: 80%;
+    background-color: rgb(200, 118, 224);
+    background-image: url("/assets/img/home-page/cont2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#HomePage #SEC-2 #sub-sec-2 .title{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#HomePage #SEC-2 #sub-sec-2 .title .text h1{
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4vw;
+    color: #FFFFFF;
+    height: 71%;
+    z-index: 2;
+}
+#HomePage #SEC-2 #sub-sec-2 .title .text .line{
+    width: 100%;
+    height: 18%;
+    background-color: rgb(180, 20, 185);
+    z-index: 1;
+}
+#HomePage #SEC-2 #sub-sec-2 .content{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#HomePage #SEC-2 #sub-sec-2 .content .desc{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HomePage #SEC-2 #sub-sec-2 .content .desc p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3vw;
+    width: 65%;
+    color: #FFFFFF;
+}
+#HomePage #SEC-2 #sub-sec-2 .content .logo{
+    width: 30%;
+}
+
+#HomePage #SEC-3 {
+    background-color: #222222;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HomePage #SEC-3 .content{
+    width: 80%;
+    height: 80%;
+}
+#HomePage #SEC-3 .content .text{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HomePage #SEC-3 .content .text .title{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#HomePage #SEC-3 .content .text .title h1{
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4vw;
+    text-align: center;
+    color: #FFFFFF;
+    height: 46%;
+    z-index: 2;
+}
+#HomePage #SEC-3 .content .text .title .line{
+    width: 60%;
+    height: 15%;
+    background-color: darkorchid;
+    z-index: 1;
+}
+#HomePage #SEC-4 {
+    background-color: #222222;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(106, 3, 138);
+    background-image: url("/assets/img/home-page/cont3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HomePage #SEC-4 .content{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HomePage #SEC-4 .content .text{
+    text-align: center;
+    width: auto;
+    height: 30%;
+    margin-right: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HomePage #SEC-4 .content .text h1{
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2vw;
+    color: #FFFFFF;
+}
+#HomePage #SEC-4 .content .btn{
+    width: 14%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #701F7C;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'NTR';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8vw;
+    color: #FFFFFF;
+    user-select: none;
+    cursor: crosshair;
+}
+#HomePage #SEC-5 {
+    background-color: #222222;
+    width: 100%;
+    height: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#HomePage #SEC-5 .cont {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: deepskyblue;
+}
+#HomePage #SEC-5 .BLC{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+#HomePage #SEC-5 .BLC .SUB-BLC{
+    width: 100%;
+    height: 40%;
+}
+#HomePage #SEC-5 .BLC .SUB-BLC .text h1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+#HomePage #SEC-5 .BLC .SUB-BLC .line{
+    width: 10%;
+    height: 0.8%;
+    background-color: darkviolet;
+    margin-top: 2.5vw;
+}
+#HomePage #SEC-5 .BLC .SUB-BLC .desc p{
+    margin-top: .5vw;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+
+#hightlight{
+    font-weight: bold;
+    color: #B10DC9;
+}
+#PUB{
+    background-color: #222222;
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#PUB .line{
+    width: 27.5%;
+    height: 2%;
+    background-color: rgb(255, 255, 255);
+}
+#PUB .content{
+    width: 45%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#PUB .content h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    color: #FFFFFF;
+    text-align: center;
+}
+#PUB .content h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2vw;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 700px){
+    #HomePage .header .BLC1 .title .main-text h1{
+        font-size: 4.8vw;
+    }
+    #HomePage .header .BLC1 .title .sub-text h1{
+        font-size: 4.3vw;
+    }
+    #HomePage .header .BLC2 .bloc-info{    
+        width: 100%;
+    }
+    #HomePage .header .BLC2 .bloc-info .sub-blc .title h1{
+        font-size: 2.8vw;
+    }
+    #HomePage .header .BLC2 .bloc-info .sub-blc .desc h1{
+        font-size: 2.2vw;
+    }
+    #HomePage .header .BLC2 .follow-us{    
+        width: 100%;
+    }
+    #HomePage .header .BLC2 .follow-us .main-cont{    
+        width: 80%;
+    }
+    #HomePage .header .BLC2 .follow-us .main-cont .sub-cont2 .text h1{
+        font-size: 2.8vw;
+    }
+    /********** responsive of the first section ***********/
+
+    #HomePage #SEC-1 #BLC-1 {
+        width: 70%;
+        height: 40%;
+        flex-direction: column;
+    }
+    #HomePage #SEC-1 #BLC-1 .sub-blc .icon {
+        width: 50%;
+        height: 50%;
+    }
+    #HomePage #SEC-1 #BLC-1 .sub-blc .text {
+        width: auto;
+    }
+    #HomePage #SEC-1 #BLC-1 .sub-blc .text h1 {
+        font-size: 2.7vw;
+    }
+    #HomePage #SEC-1 #BLC-2 {
+        width: 80%;
+        height: 60%;
+        flex-direction: column;
+    }
+    #HomePage #SEC-1 #BLC-2 .sub-blc {
+        justify-content: space-evenly;
+    }
+    #HomePage #SEC-1 #BLC-2 .sub-blc .sub-content {
+        height: 1%;
+    }
+    /************ Sresponsive of section 2 of the first sub section ***********/
+    #HomePage #SEC-2 #sub-sec-1 .content{
+        width: 100%;
+    }
+
+    #HomePage #SEC-2 #sub-sec-1 .content .text h1{
+        font-size: 3.5vw;
+    }
+    #HomePage #SEC-2 #sub-sec-1 .content .btn{
+        width: auto;
+        font-size: 2.8vw;
+        padding: 0.8vw;    
+    }
+    #HomePage #SEC-2 #sub-sec-2{
+        width: 100%;
+        height: 80%;
+    }
+    /**** responive of the carousel galarie ***/
+    #HomePage #SEC-3 {
+        height:55vw;
+    }
+}
+@media screen and (max-width: 700px) and (min-width: 450px){
+    #HomePage .header .BLC1{
+        width: 90%;
+    }
+    #HomePage .header .BLC1 .title .main-text h1{
+        font-size: 6.8vw;
+    }
+    #HomePage .header .BLC1 .title .main-text .line{
+        height: 15%;
+    }
+    #HomePage .header .BLC1 .title .sub-text h1{
+        font-size: 5.3vw;
+    }
+    
+    #HomePage .header .BLC2 .bloc-info{    
+        width: 70%;
+        height: 80%;
+        flex-direction: column;
+    }
+    #HomePage .header .BLC2 .bloc-info .sub-blc {
+        border: 2px dashed white;
+    }
+    #HomePage .header .BLC2 .bloc-info .sub-blc .title h1{
+        font-size: 3.8vw;
+    }
+    #HomePage .header .BLC2 .bloc-info .sub-blc .desc h1{
+        font-size: 3.2vw;
+    }
+    #HomePage .header .BLC2 .follow-us{    
+        width: 100%;
+    }
+    #HomePage .header .BLC2 .follow-us .main-cont{    
+        width: 80%;
+    }
+    #HomePage .header .BLC2 .follow-us .main-cont .sub-cont2 .text h1{
+        font-size: 3.8vw;
+    }
+    /********** responsive of the first section ***********/
+
+    #HomePage #SEC-1 #BLC-1 {
+        width: 70%;
+        height: 40%;
+        flex-direction: column;
+    }
+    #HomePage #SEC-1 #BLC-1 .sub-blc {
+        width: 52%;
+
+    }
+    #HomePage #SEC-1 #BLC-1 .sub-blc .icon {
+        width: 50%;
+        height: 50%;
+    }
+    #HomePage #SEC-1 #BLC-1 .sub-blc .text {
+        width: auto;
+    }
+    #HomePage #SEC-1 #BLC-1 .sub-blc .text h1 {
+        font-size: 3.7vw;
+    }
+    #HomePage #SEC-1 #BLC-2 {
+        width: 80%;
+        height: 60%;
+        flex-direction: column;
+    }
+    
+    #HomePage #SEC-1 #BLC-2 .sub-blc {
+        justify-content: space-evenly;
+    }
+    #HomePage #SEC-1 #BLC-2 .sub-blc .sub-content {
+        height: 1%;
+    }
+
+    #HomePage #SEC-1 #BLC-2 .sub-blc .sub-content h1 {
+        font-size: 3vw;
+    }
+    /************ Sresponsive of section 2 *********/
+    /**the first sub section */
+    #HomePage #SEC-2 {
+        height: fit-content;
+    }
+    #HomePage #SEC-2 #sub-sec-1 .content{
+        width: 100%;
+        flex-direction: column;
+    }
+    #HomePage #SEC-2 #sub-sec-1 .content .text h1{
+        font-size: 4.5vw;
+    }
+    #HomePage #SEC-2 #sub-sec-1 .content .btn{
+        width: auto;
+        font-size: 3.2vw;
+        padding: 0.99vw;    
+    }
+    /**the second sub section */
+    #HomePage #SEC-2 #sub-sec-2{
+        padding: 5vw 0vw;
+        width: 100%;
+        height: 80%;
+    }
+    #HomePage #SEC-2 #sub-sec-2 .content{
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+    #HomePage #SEC-2 #sub-sec-2 .content .desc {
+        width: 98%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #HomePage #SEC-2 #sub-sec-2 .content .desc p {
+        font-size: 3.8vw;
+    }
+    /**** responive of the carousel galarie ***/
+    #HomePage #SEC-3 {
+        height:65vw;
+    }
+    #HomePage #SEC-3 .content .text .title h1{
+        font-family: 'Righteous', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 6vw;
+        text-align: center;
+        color: #FFFFFF;
+        height: 46%;
+        z-index: 2;
+    }
+    #HomePage #SEC-3 .content .text .title .line{
+        width: 80%;
+        height: 5%;
+        background-color: darkorchid;
+        z-index: 1;
+    }
+
+     /************ responsive of section 4 of the staff join *********/
+    /**the first sub section */
+    #HomePage #SEC-4 .content{
+        width: 100%;
+        flex-direction: column;
+    }
+    #HomePage #SEC-4 .content .text h1{
+        font-size: 4.5vw;
+        margin-bottom: 1.5vw;
+    }
+    #HomePage #SEC-4 .content .btn{
+        width: auto;
+        font-size: 3.2vw;
+        padding: 0.99vw; 
+        border: 1px solid #FFFFFF;
+    }
+    /*********** responsive of thje last section in page is the text desc ***/
+    #HomePage #SEC-5 {
+        flex-direction: column;
+        height: fit-content;
+        padding: 5vw 0vw;
+    }
+    #HomePage #SEC-5 .BLC{
+        width: 90%;
+    }
+    #HomePage #SEC-5 .BLC .SUB-BLC .text h1{
+        font-size: 4vw;
+    }
+    #HomePage #SEC-5 .BLC .SUB-BLC .desc p{
+        font-size: 3.2vw;
+    }
+    /********** responisve of PUB *****************/
+    #PUB{
+        height: fit-content;
+        padding: 2vw 0vw;
+    }
+    #PUB .line{
+        display: none;
+    }
+    #PUB .content{
+        width: 95%;
+        height: 50%;
+    }
+    #PUB .content h1{
+        font-size: 3.5vw;
+    }
+    #PUB .content h2{
+        font-size: 3.2vw;
+    }
+}
+@media screen and (max-width: 450px) and (min-width: 250px){
+    #HomePage .header .BLC1{
+        width: 100%;
+
+    }
+    #HomePage .header .BLC1 .title .main-text {
+        justify-content: inherit;
+    }
+    #HomePage .header .BLC1 .title .main-text h1{
+        font-size: 7.8vw;
+    }
+    
+    #HomePage .header .BLC1 .title .main-text .line{
+        height: 5%;
+    }
+    #HomePage .header .BLC1 .title .sub-text h1{
+        font-size: 6.3vw;
+    }
+    
+    #HomePage .header .BLC2 .bloc-info{    
+        width: 80%;
+        height: 90%;
+        
+        flex-direction: column;
+    }
+    #HomePage .header .BLC2 .bloc-info .sub-blc {
+        border: 0.5px dashed white;
+    }
+    #HomePage .header .BLC2 .bloc-info .sub-blc .title h1{
+        font-size: 4.8vw;
+    }
+    #HomePage .header .BLC2 .bloc-info .sub-blc .desc h1{
+        font-size: 4.2vw;
+    }
+    #HomePage .header .BLC2 .follow-us{    
+        width: 100%;
+    }
+    #HomePage .header .BLC2 .follow-us .main-cont{    
+        width: 80%;
+    }
+    #HomePage .header .BLC2 .follow-us .main-cont .sub-cont2 .text h1{
+        font-size: 4.8vw;
+    }
+      /********** responsive of the first section ***********/
+    #HomePage #SEC-1 #BLC-1 {
+        width: 70%;
+        height: 40%;
+        flex-direction: column;
+    }
+    #HomePage #SEC-1 #BLC-1 .sub-blc {
+        width: 52%;
+
+    }
+    
+    #HomePage #SEC-1 #BLC-1 .sub-blc .icon {
+        width: 50%;
+        height: 50%;
+    }
+    #HomePage #SEC-1 #BLC-1 .sub-blc .text {
+        width: auto;
+    }
+    #HomePage #SEC-1 #BLC-1 .sub-blc .text h1 {
+        font-size: 4.7vw;
+    }
+    #HomePage #SEC-1 #BLC-2 {
+        width: 80%;
+        height: 60%;
+        flex-direction: column;
+    }
+    #HomePage #SEC-1 #BLC-2 .sub-blc {
+        justify-content: space-evenly;
+    }
+    #HomePage #SEC-1 #BLC-2 .sub-blc .sub-content {
+        height: 1%;
+    }
+    #HomePage #SEC-1 #BLC-2 .sub-blc .sub-content h1 {
+        font-size: 4vw;
+    }
+    
+    /************ Sresponsive of section 2 *********/
+    /**the first sub section */
+    #HomePage #SEC-2 #sub-sec-1 .content{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    #HomePage #SEC-2 #sub-sec-1 .content .text h1{
+        font-size: 5.5vw;
+    }
+    #HomePage #SEC-2 #sub-sec-1 .content .btn {
+        width: auto;
+        font-size: 7.2vw;
+        padding: 1.99vw;
+        border: .5px solid white;
+    }
+    /**the second sub section */
+    #HomePage #SEC-2 #sub-sec-2{
+
+        height: fit-content;
+    }
+    #HomePage #SEC-2 #sub-sec-2 .title .text h1 {
+        font-family: 'Righteous', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 6.8vw;
+        color: #FFFFFF;
+    }
+    #HomePage #SEC-2 #sub-sec-2 .content{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    #HomePage #SEC-2 #sub-sec-2 .content .logo {
+        width: 40%;
+    }
+    #HomePage #SEC-2 #sub-sec-2 .content .desc {
+        width: 89%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #HomePage #SEC-2 #sub-sec-2 .content .desc p {
+        font-size: 4.1vw;
+    }
+    /**** responive of the carousel galarie ***/
+    #HomePage #SEC-3 {
+        height:65vw;
+    }
+     /************ responsive of section 4 of the staff join *********/
+    /**the first sub section */
+    #HomePage #SEC-4 .content{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    #HomePage #SEC-4 .content .text h1{
+        font-size: 5.5vw;
+    }
+    #HomePage #SEC-4 .content .btn{
+        width: auto;
+        font-size: 7.2vw;
+        padding: 1.99vw;
+        border: .5px solid white; 
+    }
+    /*********** responsive of thje last section in page is the text desc ***/
+    #HomePage #SEC-5 {
+        flex-direction: column;
+        height: fit-content;
+        padding: 5vw 0vw;
+    }
+    #HomePage #SEC-5 .BLC{
+        width: 90%;
+    }
+    #HomePage #SEC-5 .BLC .SUB-BLC .text h1{
+        font-size: 4vw;
+    }
+    #HomePage #SEC-5 .BLC .SUB-BLC .desc p{
+        font-size: 3.2vw;
+    }
+    /********** responisve of PUB *****************/
+    #PUB{
+        height: fit-content;
+        padding: 2vw 0vw;
+    }
+    #PUB .line{
+        display: none;
+    }
+    #PUB .content{
+        width: 95%;
+        height: 50%;
+    }
+    #PUB .content h1{
+        font-size: 3.5vw;
+    }
+    #PUB .content h2{
+        font-size: 3.2vw;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1400px) and (min-width: 1200px){
+    #HomePage #SEC-5  {
+        height: 75vw;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 200px){
+    #HomePage #SEC-5  {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 250px)  and (min-width:0px){
+    .main-cont{
+        display: none;
+        visibility: hidden;
+    }
+    #hide{
+        display: block !important;
+        visibility: visible !important;
+    }
+    body{
+        background: none;
+    }
+    #hide h1{
+        text-align: center;
+        text-decoration: underline red;
+    }
+}
+#hide{
+    display: none;
+    visibility: hidden;
+}
+/***********  STYLE OF  MAIN NAV **********************/
+.main-nav{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+/*! ******************************************************/
+/*!  ************   Guest NAV BAR STYLE        **********************/
+/*! ******************************************************/
+
+/*?tyle of the P1 WHICH IS THE SECTION OF LOGO */
+.main-nav .sub-nav_P1{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-nav .sub-nav_P1 .logo{
+    height: 100%;
+    filter: drop-shadow(.5px .5px 0.5px white);
+}
+
+/*?Style of the PaRT 2 WHICH IS THE SECTION OF Login and settings icon */
+.main-nav .sub-navGuest{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+/**login Button */
+
+.main-nav .sub-navGuest .btn-space {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 8px;
+}
+.main-nav .sub-navGuest .btn-space .btn{
+    display: block;
+    width: 130px;
+    height: 45px;
+    background: linear-gradient(270deg, #913496 10.81%, rgba(231, 0, 243, 0.78) 100%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-duration: .5s;
+    cursor: pointer;
+}
+.main-nav .sub-navGuest .btn-space .btn .ico{
+    width: 20%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: invert(1);
+}
+.main-nav .sub-navGuest .btn-space .btn .text-btn{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-nav .sub-navGuest .btn-space .btn .text-btn a{
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    user-select: none;
+}
+.main-nav .sub-navGuest .btn-space .btn:hover{
+    background: linear-gradient(50deg, #be12c7 10.81%, rgba(230, 37, 240, 0.78) 100%);
+    animation-duration: 1s;
+}
+
+/**Settings Ico 
+.main-nav .sub-navGuest .settings-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8px;
+    width: 2vw;
+    padding-right: 8%;
+}
+.main-nav .sub-navGuest .settings-space .ico{
+    filter: invert(1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-nav .sub-navGuest .settings-space .ico:hover{
+    transition-duration: 1.5s;
+}
+*/
+/** style of phone use navbar* */
+.ph-sub-navGuest img{
+    width: 5vw;
+    height: 5vw;
+    filter: invert(1);
+}
+
+@keyframes settings-rotate {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(360deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+
+/*! ************************************************************************************************************/
+/*! ************************************************************************************************************/
+/*! ***********************************************************************************************************/
+/*!  ************  ************************  USER NAV BAR STYLE        **********************************/
+/*! *********************************************************************************************************/
+/*! ************************************************************************************************************/
+/*! ************************************************************************************************************/
+.main-nav .UserNav{
+    color: aqua !important;
+    /*background-color: red;*/
+    width: 90vw;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.main-nav .UserNav div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-nav .UserNav .sub-nav-logo{
+    width: 8%;
+    /*background-color: azure;*/
+}
+.main-nav .UserNav .sub-nav-links{
+    width: 77%;
+    /*background-color: blueviolet;*/
+}
+.main-nav .UserNav .sub-nav-notiprof{
+    width: 15%;
+    /*background-color: coral;*/
+}
+/**************** Style Of logo container ******************/
+.main-nav .UserNav .sub-nav-logo .logo-cont{
+   /* background-color: deeppink;*/
+   filter: drop-shadow(.5px .5px 0.5px white);
+    width: 45%;
+}
+
+/**************** Style of links and download link of the nav bar ********/
+.main-nav .UserNav .sub-nav-links .part1{
+    width: 75%;
+  /*  background-color: darkcyan;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main-nav .UserNav .sub-nav-links .part1 .items{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+.main-nav .UserNav .sub-nav-links .part1 .item{
+    margin: 0px 0.9vw;
+    height: 100%;
+}
+.main-nav .UserNav .sub-nav-links .part1 .item a{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+   /* background-color: khaki;*/
+    height: 100%;
+    padding: 0px 0.2vw;
+    position: relative;
+
+}
+.main-nav .UserNav .sub-nav-links .part1 .item a .ico{
+    width: 1.2vw;
+    filter: invert(1);
+    z-index: 2;
+
+}
+.main-nav .UserNav .sub-nav-links .part1 .item a .txt{
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-left: .3vw;
+    z-index: 2;
+}
+.main-nav .UserNav .sub-nav-links .part1 .item a .line{
+    position: absolute;
+    background: #B10DC9;
+    height: 28%;
+    width: 0%;
+    bottom: -3px;
+    z-index: 1;
+}
+
+
+
+/*?PART 2  of links this part about download launcher*/
+.main-nav .UserNav .sub-nav-links .part2{
+    width: 25%;
+  /*  background-color: darkred;*/
+  justify-content: flex-end;
+}
+.main-nav .UserNav .sub-nav-links .part2 .btn{
+    width: 70%;
+    background: linear-gradient(180deg, #E407F0 0%, #B242BB 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0px;
+    height: 9vh;
+}
+
+.main-nav .UserNav .sub-nav-links .part2 .btn .txt{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/**************** Style of links and Notification of the Profile icon ********/
+.main-nav .UserNav .sub-nav-notiprof {
+    justify-content: space-around;
+}
+.main-nav .UserNav .sub-nav-notiprof .part1{
+    width: 22%;
+   /* background-color: rgb(125, 139, 0);*/
+   position: relative;
+}
+.main-nav .UserNav .sub-nav-notiprof .part1 img{
+    filter: invert(1);
+    height: 2vw;
+    position: absolute;
+    cursor: pointer;
+}
+.main-nav .UserNav .sub-nav-notiprof .part1 .num {
+    color: white;
+    position: absolute;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background: #B10DC9;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 1.1vw;
+    right: 8px;
+    font-family: 'Righteous';
+    bottom: -3px;
+    padding: 2px 6px;
+}
+
+.main-nav .UserNav .sub-nav-notiprof .part2{
+    width: 60%;
+   justify-content:flex-start;
+}
+.main-nav .UserNav .sub-nav-notiprof .part2 img{
+    width: 33%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+@keyframes bell-anim {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    30%{
+        transform: rotateZ(50deg);
+    }
+    60%{
+        transform: rotateZ(-50deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes profile-shine {
+    0%{
+        border: none;
+    }
+    30%{
+        box-shadow: 0px 0px 12px 3px #da7cdf;
+    }
+    60%{
+        box-shadow: 4px 4px 12px 3px #da7cdf;
+    }
+    100%{
+        border: none;
+    }
+}
+
+
+/*
+.user-drop{
+    position: fixed;
+    width: 100px;
+    height: 200px;
+    background-color: #E407F0;
+    border: 2px solid black;
+}
+*/
+/*! Styele of the drop mobile  NAV-bar ***/
+.drop-mobile{
+    display: none;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.drop-mobile #BLC1{
+    width: 60%;
+    height: 29%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+} 
+.drop-mobile #BLC1 .part1{ 
+    font-size: 2vw;
+    color: rgb(255, 255, 255);
+    font-size: 8.2vw;
+    font-family: 'Poppins';
+}
+.drop-mobile #BLC1 .part2{  
+    display: flex;
+    justify-content: center;
+    height: auto;
+    z-index: 2;
+}
+.drop-mobile #BLC1 .part2 img{
+    width: 33%;
+    border-radius: 50%;
+}
+.drop-mobile #BLC1 .box{
+    display: none;
+    visibility: hidden;
+    width: 77%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+    border-radius: 3%;
+    margin-top: -5%;
+} 
+.drop-mobile #BLC1 .box ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+}
+
+.drop-mobile #BLC1 .box ul li a {
+    display: flex;
+    justify-content: center;
+}
+.drop-mobile #BLC1 .box ul li a .ico{
+    width: 10%;
+}
+.drop-mobile #BLC1 .box ul li a .txt{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.065em;
+    margin-left: 0.5vw;
+    color: #000000;
+
+}
+.drop-mobile #BLC2{
+    height: 30%;
+}
+.drop-mobile #BLC2 .items{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.drop-mobile #BLC2 .items .item a{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+
+}
+.drop-mobile #BLC2 .items .item a .ico{
+    width: 4.2vw;
+    filter: invert(1);
+    z-index: 2;
+
+}
+.drop-mobile #BLC2 .items .item a .txt{
+    font-family: Righteous;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 27px;
+    color: #FFFFFF;
+    padding-left: .3vw;
+    z-index: 2;
+} 
+/*! Styele of the drop pc  NAV-bar ***/
+
+.drop-pc{
+    display: none;
+    visibility: hidden;
+    width: 189px;
+    height: 250px;
+    border: 0.8px solid black;
+    background-color: #ffffff;
+    position: absolute;
+    right: 9%;
+    top: 8%;
+}
+.drop-pc ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+.drop-pc ul li a {
+    display: flex;
+    padding-left: 16%;
+    justify-content: flex-start;
+}
+.drop-pc ul li a .ico{
+    width: 10%;
+ 
+}
+
+.drop-pc ul li a .txt{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 27px;
+    letter-spacing: 0.065em;
+    margin-left: 0.5vw;
+    color: #000000;
+
+}
+.drop-pc ul li a .txt:hover{
+    font-weight: bolder;
+    color: #B10DC9;
+    text-decoration: underline 1px #B10DC9;
+
+}
+/*! Styele of the drop notification  NAV-bar ***/
+.drop-pc-notif{
+    display: none;
+    visibility: hidden;
+    width: 272px;
+    height: 142px;
+    border: .5px solid black;
+    background-color: #FFFFFF;
+    position: absolute;
+    right: 13%;
+    top: 9%;
+    padding: 1vw;
+}
+.drop-pc-notif h1{
+    text-align: left;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 0.065em;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration:  6px underline #B242BB;
+}
+.drop-pc-notif h2{
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.065em;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 0.6vw;
+}
+/*?? RESPONSIVE OF NAV */
+@media screen and (min-width: 1000px) {
+    .ph-sub-navGuest{
+        display: none;
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 1000px) {
+    /* ****  HIDE THE NAV BAR OF GUEST*/
+
+    /* ****  HIDE THE NAV BAR OF Users*/
+    .sub-nav-links , .sub-nav-notiprof{
+        display: none !important;
+        visibility: hidden  !important;
+    }
+
+    .main-nav {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        height: inherit;
+        align-items: center;
+        user-select: none;
+        padding: 1.5vw 0px;
+    }
+    .main-nav .UserNav {
+        justify-content: space-between;
+    }
+    .main-nav .UserNav .sub-nav-logo .logo-cont {
+        width: 85% !important;
+    }
+    .main-nav .UserNav .sub-nav-logo {
+        width: initial;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .ph-sub-navGuest img{
+        width: 8vw;
+        height: 8vw;
+    }
+
+
+    .main-nav .UserNav .sub-nav-logo .logo-cont {
+        width: 85% !important;
+    }
+}

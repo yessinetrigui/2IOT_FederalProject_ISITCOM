@@ -1,0 +1,400 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+}
+/****** styele of main body **/
+body{
+    background-image: url("/assets/img/login-page/login-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+/***** style of the container ****/
+.main-cont{
+    background-color: #AA50AC;
+    padding: 0.7vw;
+    width: 64.8vw;
+    height: 69vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-cont img{
+    height: 100%;
+    width: 100%;
+}
+.main-cont .sub-cont{
+    width: 50%;
+    height: 100%;
+}
+.main-cont .sub-cont:nth-child(1){
+    width: 46%;
+    background-color: #232323;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-cont .sub-cont:nth-child(2){
+    width: 54%;
+}
+/********* Style of the first sub container of the title LOGIN **********/
+.main-cont #form .part{
+    width: 100%;
+}
+.main-cont #form .part:nth-child(1){
+    height: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main-cont #form .part:nth-child(1) .txt{
+    position: relative;
+    width: 25%;
+    margin-left: 2.5vw;
+}
+.main-cont #form .part:nth-child(1) .txt h1{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8vw;
+    z-index: 3;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: -0.7vw;
+    margin-left: -0.32vw;
+}
+.main-cont #form .part:nth-child(1) .txt .line{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 3px;
+    height: 15px;
+    z-index: 2;
+    background-color: #b10dc9;
+}
+/********* Style of the second sub container of the Forum **********/
+.main-cont #form .part:nth-child(2){
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-cont #form .part:nth-child(2) .form{
+    width: 80%;
+    height: 90%;
+  /*  background-color: rebeccapurple;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-cont #form .part:nth-child(2) .form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.main-cont #form .part:nth-child(2) .form .user{
+   /* background-color: rosybrown;*/
+    height: 30%;
+}
+.main-cont #form .part:nth-child(2) .form .pass{
+   /* background-color: seagreen;*/
+    height: 30%;
+}
+.main-cont #form .part:nth-child(2) .form .rmb{
+    /* background-color: seagreen;*/
+    height: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+ }
+.main-cont #form .part:nth-child(2) .form .rmb input[type="checkbox"]{
+    display: block;
+    width: 22px;
+    height: 22px;
+}
+.main-cont #form .part:nth-child(2) .form .rmb h1{
+    display: block;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2vw;
+    color: #FFFFFF;
+    padding-left: 2%;
+}
+.main-cont #form .part:nth-child(2) .form .login{
+  /*  background-color: plum;*/
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-cont #form .part:nth-child(2) .form label{
+    display: block;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6vw;
+    color: #FFFFFF;
+}
+.main-cont #form .part:nth-child(2) .form label::after{
+    content: "*";
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6vw;
+    color: #FF4136;
+}   
+.main-cont #form .part:nth-child(2) .form input[type="text"],input[type="password"]{
+    background: #FFECEC;
+    border-radius: 3px;
+    width: 80%;
+    height: 34%;
+}
+.main-cont #form .part:nth-child(2) .form input[type="submit"]{
+    background: #660066;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4vw;
+    color: #FFFFFF;
+    padding: 0.5vw 3.5vw;
+    border-radius: 3px;
+    border: 1px solid white;
+    cursor:pointer;
+
+}
+.main-cont #form .part:nth-child(2) .form .login a{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.9vw;
+    color: #ffffff8e;
+}
+/********* Style of the third sub container of the Contact Us **********/
+.main-cont #form .part:nth-child(3){
+    height: 15%;
+   /* background-color: salmon;*/
+}
+.main-cont #form #links-SM{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: centers;
+}
+.main-cont #form #links-SM .title{
+   /* background-color: purple;*/
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.main-cont #form #links-SM .title h1{
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1vw;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.main-cont #form #links-SM .icos{
+   /* background-color: rgb(0, 128, 64);*/
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-cont #form #links-SM .icos .line{
+    width: 25%;
+    height: 8%;
+   background-color: rgb(255, 255, 255);
+}
+.main-cont #form #links-SM .icos .icons{
+    width: 50%;
+    height: 100%;
+ /*   background-color: sienna;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-cont #form #links-SM .icos .icons img{
+    width: 11%;
+    filter: invert(1);
+    cursor:pointer;
+}
+
+/*********** R E S P O N S I V E *****************/
+@media screen and (max-width: 1500px)  and (min-width:1024px){
+    .main-cont{
+        width: 84.8vw;
+        height: 89vh;
+    }
+    .main-cont #form .part:nth-child(1) .txt h1{
+        font-size: 3vw;
+    }
+    .main-cont #form .part:nth-child(2) .form label{
+        font-size: 2.6vw;
+    }
+    .main-cont #form .part:nth-child(2) .form label::after{
+        font-size: 2.6vw;
+    }   
+    .main-cont #form .part:nth-child(2) .form input[type="submit"]{
+        font-size: 2.4vw;
+    }
+    .main-cont #form .part:nth-child(2) .form .login a{
+        font-size: 1.9vw;
+    }
+    .main-cont #form #links-SM .title h1{
+        font-size: 1.99vw;
+    }
+    .main-cont #form .part:nth-child(2) .form .rmb h1{
+        font-size: 1.8vw;
+    }
+}
+@media screen and (max-width: 1024px)  and (min-width:600px){
+    .main-cont{
+        background-color: #AA50AC;
+        padding: 0.7vw;
+        width: 90vw;
+        height: 86vh;
+    }
+    .main-cont .sub-cont:nth-child(2){
+        display: none;
+        visibility: hidden;
+    }
+    .main-cont .sub-cont:nth-child(1){
+        background: linear-gradient(45deg, #2b2929 50%, #232323 50%);
+        width: 100%;
+    }
+    .main-cont #form .part:nth-child(1) .txt h1{
+        font-size: 5vw;
+    }
+    .main-cont #form .part:nth-child(2) .form label{
+        font-size: 4.6vw;
+    }
+    .main-cont #form .part:nth-child(2) .form label::after{
+        font-size: 4.6vw;
+    }   
+    .main-cont #form .part:nth-child(2) .form input[type="submit"]{
+        font-size: 4.4vw;
+    }
+    .main-cont #form .part:nth-child(2) .form .login a{
+        font-size: 2.9vw;
+    }
+    .main-cont #form #links-SM .title h1{
+        font-size: 4.1vw;
+    }
+    .main-cont #form .part:nth-child(2) .form .rmb h1{
+        font-size: 2.8vw;
+    }
+}
+@media screen and (max-width: 600px)  and (min-width:400px){
+    .main-cont{
+        background-color: #AA50AC;
+        padding: 0.7vw;
+        width: 90vw;
+        height: 86vh;
+    }
+    .main-cont .sub-cont:nth-child(2){
+        display: none;
+        visibility: hidden;
+    }
+    .main-cont .sub-cont:nth-child(1){
+        width: 100%;
+        height: 100%;
+    }
+    .main-cont #form .part:nth-child(1) .txt h1{
+        font-size: 7vw;
+    }
+    .main-cont #form .part:nth-child(2) .form label{
+        font-size: 5.6vw;
+    }
+    .main-cont #form .part:nth-child(2) .form label::after{
+        font-size: 5.6vw;
+    }   
+    .main-cont #form .part:nth-child(2) .form input[type="submit"]{
+        font-size: 5.4vw;
+    }
+    .main-cont #form .part:nth-child(2) .form .login a{
+        font-size: 3.9vw;
+    }
+    .main-cont #form #links-SM .title h1{
+        font-size: 5.1vw;
+    }
+    .main-cont #form .part:nth-child(2) .form .rmb h1{
+        font-size: 4.8vw;
+    }
+}
+@media screen and (max-width: 400px)  and (min-width:250px){
+    .main-cont{
+        background-color: #AA50AC;
+        padding: 0.7vw;
+        width: 90vw;
+        height: 86vh;
+    }
+    .main-cont .sub-cont:nth-child(2){
+        display: none;
+        visibility: hidden;
+    }
+    .main-cont .sub-cont:nth-child(1){
+        width: 100%;
+        height: 100%;
+    }
+    .main-cont #form .part:nth-child(1) .txt h1{
+        font-size: 7vw;
+    }
+    .main-cont #form .part:nth-child(2) .form label{
+        font-size: 6.6vw;
+    }
+    .main-cont #form .part:nth-child(2) .form label::after{
+        font-size: 6.6vw;
+    }   
+    .main-cont #form .part:nth-child(2) .form input[type="submit"]{
+        font-size: 6.4vw;
+    }
+    .main-cont #form .part:nth-child(2) .form .login a{
+        font-size: 4.9vw;
+    }
+    .main-cont #form #links-SM .title h1{
+        font-size: 6.1vw;
+    }
+    .main-cont #form .part:nth-child(2) .form .rmb h1{
+        font-size: 3.99vw;
+    }
+}
+@media screen and (max-width: 250px)  and (min-width:0px){
+    .main-cont{
+        display: none;
+        visibility: hidden;
+    }
+    #hide{
+        display: block !important;
+        visibility: visible !important;
+    }
+    body{
+        background: none;
+    }
+    #hide h1{
+        text-align: center;
+        text-decoration: underline red;
+    }
+}
+#hide{
+    display: none;
+    visibility: hidden;
+}

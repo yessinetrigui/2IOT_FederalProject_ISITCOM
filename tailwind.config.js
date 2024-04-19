@@ -23,7 +23,14 @@ module.exports = {
         'grey':'#DADADA',
         'grad1':'#483CDC',
         'grad2':'#5B4EF1',
-
+        'gray-950': '#030712',
+        'gray-900': '#111827',
+        'gray-100': '#f3f4f6',
+        'gray-800': '#1f2937',
+        'gray-300': '#d1d5db',
+        'green-200': '#bbf7d0',
+        'green-600': '#16a34a',
+        'gray-50': '#f9fafb'
 
       },
       extend: {

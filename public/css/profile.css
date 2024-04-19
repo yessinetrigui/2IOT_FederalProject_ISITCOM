@@ -1,0 +1,307 @@
+#PROF{
+    background-color: #323232;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 5vw;
+}
+#PROF .PIC_CONT{
+    width: 100%;
+    height: max-content;
+    margin-bottom: 3vw;
+}
+#PROF .PIC_CONT img{
+    width: 100%;
+    height: 100%;
+
+}
+
+#PROF .PIC_CONT .eclp{
+    width: 10vw;
+    height: 10vw;
+    margin: auto;
+    margin-top: -9vw;
+    position: relative;
+    z-index: 2;
+}
+#PROF .PIC_CONT .eclp img{
+    border-radius: 50%;
+}
+#PROF .PIC_CONT h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2vw;
+    letter-spacing: 0.065em;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+#PROF .cont{
+    margin: 1vw auto;
+    width: 60%;
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1.8vw;
+}
+
+#PROF .cont .title{
+    width: max-content;
+    height: 20%;
+    margin-bottom: 2.4vw;
+
+}
+#PROF .cont .title .txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#PROF .cont .title .txt h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.7vw;
+    letter-spacing: 0.065em;
+    color: #B10DC9;
+    text-decoration: 3px underline white;
+}
+#PROF .cont .title .line{
+    width: 100%;
+    height: 10%;
+    margin-top: -5%;
+    background-color: #FFFFFF;
+}
+#PROF .cont .content{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#PROF .cont .content .sub-cnt{
+    width: 30%;
+    height: 90%;
+
+}
+#PROF .cont .content .sub-cnt:nth-child(2){
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+
+}
+#PROF .cont .content .sub-cnt .sub-title{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#PROF .cont .content .sub-cnt .sub-title h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6vw;
+    letter-spacing: 0.065em;
+    color: #B10DC9;
+}
+#PROF .cont .content .sub-cnt .sub-content{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#PROF .cont .content .sub-cnt  .sub-content .txt{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5vw;
+    letter-spacing: 0.065em;
+    color: #FFFFFF;
+}
+#PROF .cont .content .sub-cnt  .sub-content .icon{
+   width: 9%;
+   filter: invert(1);
+}
+
+#PROF #slide .content{
+    border-left: 4px solid #B10DC9;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+#PROF #slide .content .sub{
+    width: 95%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5vw 0vw;
+
+}
+#PROF #slide .content .sub .key{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#PROF #slide .content .sub .key .txt{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6vw;
+    /* identical to box height */
+    letter-spacing: 0.065em;
+    color: #FFFFFF;
+    margin-left: 0.4vw;
+}
+#PROF #slide .content .sub .key .icon{
+    width: 8%;
+    filter: invert(1);
+}
+#PROF #slide .content .sub .value{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5vw;
+    /* identical to box height */
+    letter-spacing: 0.065em;
+
+    color: #FFFFFF;
+}
+
+#PROF .carousel{
+    margin-top: 2vw;
+}
+#PROF .carousel .item{
+    border: 4px solid #B10DC9;
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 700px){
+    #PROF .cont {
+        margin: 1.2vw auto;
+        width: 80%;
+        padding: 2vw;
+    }
+
+    #PROF .cont .title .txt h1 {
+        font-size: 2.7vw;
+    }
+    #PROF .cont .content .sub-cnt .sub-title h1 {
+        font-size: 2.4vw;
+    }
+    #PROF .cont .content .sub-cnt .sub-content .txt {
+        font-size: 2vw;
+    }
+    #PROF #slide .content .sub .key .txt {
+        font-size: 2vw;
+    }
+    #PROF #slide .content .sub .value {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-width: 500px){
+    #PROF .cont {
+        margin: 1.2vw auto;
+        width: 89%;
+        padding: 2vw;
+    }
+
+    #PROF .cont .title .txt h1 {
+        font-size: 3vw;
+    }
+    #PROF .cont .content .sub-cnt .sub-title h1 {
+        font-size: 2.7vw;
+    }
+    #PROF .cont .content .sub-cnt .sub-content .txt {
+        font-size: 2.3vw;
+    }
+    #PROF #slide .content .sub .key .txt {
+        font-size: 2.4vw;
+    }
+    #PROF #slide .content .sub .value {
+        font-size: 2.4vw;
+    }
+    #PROF .PIC_CONT .eclp {
+        width: 20vw;
+        height: 20vw;
+    }
+    #PROF .PIC_CONT h1 {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 500px) and (min-width: 300px){
+    body{
+        overflow-x: hidden;
+    }
+    #PROF .cont {
+        margin: 1.2vw auto;
+        width: 95%;
+        padding: 2.5vw;
+    }
+    #PROF .cont .title {
+        width: auto;
+        margin-bottom: 7.4vw;
+
+    }
+    #PROF .cont .title .txt h1 {
+        font-size: 5.7vw;
+    }
+    #PROF .cont .content {
+        flex-direction: column;
+    }
+    #PROF .cont .content .sub-cnt {
+        width: 80%;
+    }
+    #PROF .cont .content .sub-cnt:nth-child(2) {
+        border:none;
+
+    }
+    #PROF .cont .content .sub-cnt .sub-title h1 {
+        font-size: 4.4vw;
+    }
+    #PROF .cont .content .sub-cnt .sub-content .txt {
+        font-size: 5vw;
+    }
+    #PROF .cont .content .sub-cnt .sub-content .icon {
+        width: 6%;
+    }
+    #PROF #slide .content {
+        border-left: 4px solid #B10DC9;
+        border-right: 4px solid #B10DC9;
+    }
+    #PROF #slide .content .sub {
+        margin: 2.5vw 0vw;
+        flex-direction: column;
+    }
+    #PROF #slide .content .sub .key {
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    #PROF #slide .content .sub .key .txt {
+        font-size: 5vw;
+    }
+    #PROF #slide .content .sub .value {
+        font-size: 4vw;
+    }
+    #PROF .PIC_CONT .eclp {
+        width: 20vw;
+        height: 20vw;
+    }
+    #PROF .PIC_CONT h1 {
+        font-size: 5vw;
+    }
+}

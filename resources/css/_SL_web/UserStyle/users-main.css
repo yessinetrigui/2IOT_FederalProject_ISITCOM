@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+body{
+    background-color: #181616;
+    background-image: url("/assets/img/users-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(134, 8, 118, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(157 66 163);
+    outline: 1px solid rgb(255 0 193);
+}
+#user-cont{
+    background-color: #181616;
+    background-image: url("/assets/img/users-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding: 2.5vw 1.8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#user-cont .title{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#user-cont .title .text-cont{
+    width: fit-content;
+    height: 50%;
+}
+
+#user-cont .title .text-cont .text{
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+#user-cont .title .text-cont .text h1{
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4.1vw;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 2px 2px black,-2px -2px black,-2px 2px black,2px -2px black;
+}
+#user-cont .title .text-cont .line{
+    width: 100%;
+    height: 37%;
+    background-color: rgb(165, 42, 149);
+    z-index: 1;
+    margin-top: -1.8vw;
+}
+#user-cont .user-content{
+    margin: auto;
+    width: 85%;
+    height: fit-content;
+   /* border:  1px solid white;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width: 900px) and (min-width: 700px){
+    #user-cont .title .text-cont{
+        margin-left: 15vw;
+    }
+    #user-cont .title .text-cont .text{
+        width: auto;
+    }
+    #user-cont .title .text-cont .text h1{
+        font-size: 10vw;
+    }
+    #user-cont .title .text-cont .line{
+        height: 23%;
+        width: auto;
+    }
+}
+@media screen and (max-width: 700px) and (min-width: 450px){
+
+    #user-cont .title .text-cont{
+        margin-left: 15vw;
+    }
+    #user-cont .title .text-cont .text{
+        width: auto;
+    }
+    #user-cont .title .text-cont .text h1{
+        font-size: 7vw;
+    }
+    #user-cont .title .text-cont .line{
+        height: 23%;
+        width: auto;
+    }
+}
+@media screen and (max-width: 450px) and (min-width: 250px){
+    #user-cont .title .text-cont{
+        margin-left: 2vw;
+    }
+    #user-cont .title .text-cont .text{
+        width: auto;
+    }
+    #user-cont .title .text-cont .text h1{
+        font-size: 10vw;
+    }
+    #user-cont .title .text-cont .line{
+        height: 10%;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 250px)  and (min-width:0px){
+*{
+    display: none;
+}
+}
