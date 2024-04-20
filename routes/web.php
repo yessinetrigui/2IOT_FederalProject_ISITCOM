@@ -31,6 +31,8 @@ use Illuminate\Support\Facades\Route;
 Route::name('user.')->group(function (){
     Route::redirect('/','/home');
     Route::view('/home','home')->name('home');
+    Route::view('/news','Users.news')->name('news');
+    Route::view('/profile','Users.profile')->name('profile');
 
     Route::middleware(['guest:web'])->group(function (){
         //not logged in
