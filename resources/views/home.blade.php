@@ -13,24 +13,6 @@
 
 @section('content')
 
-<?php
-try {
-    require_once('MTA/Autoloader.php');
-    $GameQ = new \GameQ\GameQ();
-
-} catch (\Throwable $th) {
-    $playersNumber = "ERROR SERVER";
-}
-try {
-    $GameQ->addServer([
-    'type' => 'mta',
-    'host' => '185.71.66.80:22003',
-    ]);
-    $results = $GameQ->process();
-    $playersNumber = $results['185.71.66.80:22003']['num_players'];
-} catch (\Throwable $th) {
-    $playersNumber = "ERROR SERVER";
-}?>
 
 <div id="HomePage">
     <div id="hide">
@@ -40,161 +22,47 @@ try {
         <div class="BLC1">
             <div class="title">
                 <div class="main-text">
-                    <div class="text"><h1>SkyLine</h1></div>
+                    <div class="text"><h1>Dasgas auto systems</h1></div>
                     <div class="line"></div>
                 </div>
                 <div class="sub-text">
-                    <h1>An Original MTA Server</h1>
+                    <h1>Where the only thing faster than our Services is our humor</h1>
                 </div>
             </div>
         </div>
-        <div class="BLC2">
-            <div class="bloc-info">
-                <div class="sub-blc1 sub-blc">
-                    <div class="title">
-                        <h1>Players Number</h1>
-                    </div>
-                    <div class="desc">
-
-                        <h1><?php echo $playersNumber;?> PLAYER</h1>
-                    </div>
-                </div>
-                <div class="sub-blc2 sub-blc">
-                    <div class="title">
-                        <h1>Last Donator</h1>
-                    </div>
-                    <div class="desc">
-                        <h1>Sidk ICHBINYESSINE
-                            </h1>
-                    </div>
-                </div>
-                <div class="sub-blc3 sub-blc">
-                    <div class="title">
-                        <h1>Top Players Join</h1>
-                    </div>
-                    <div class="desc">
-                        <h1>
-                        ICHBINYESSINE
-                        </h1>
-                    </div>
-                </div>
-                <div class="sub-blc4 sub-blc">
-                    <div class="title">
-                        <h1>Server State</h1>
-                    </div>
-                    <div class="desc">
-                        <div class="shape"></div>
-                        <h1>
-                        ONLINE
-                        </h1>
-                    </div>
-                </div>
-            </div>
-            <div class="follow-us">
-                <div class="main-cont">
-                    <div class="sub-cont1">
-                    </div>
-                    <div class="sub-cont2">
-                        <div class="text">
-                            <h1>Folllow Us</h1>
-                        </div>
-                        <div class="icons">
-                            <div onclick="openFb()" class="mini-ico">
-                                <img onclick="openFb()" src="{{ URL::to('/assets/icons/facebook-f-brands.svg') }}" alt="">
-                            </div>
-                            <div onclick="openIg()" class="mini-ico">
-                                <img onclick="openIg()" src="{{ URL::to('/assets/icons/instagram-brands.svg') }}" alt="">
-
-                            </div>
-                            <div onclick="openYt()" class="mini-ico">
-                                <img onclick="openYt()" src="{{ URL::to('/assets/icons/youtube-brands.svg') }}" alt="">
-
-                            </div>
-                            <div onclick="openDs()" class="mini-ico">
-                                <img onclick="openDs()" src="{{ URL::to('/assets/icons/discord-brands.svg') }}" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sub-cont3">
-                    </div>
-                </div>
-            </div>
-        </div>
+      
     </header>
     <section id="SEC-1">
-        <div id="BLC-1">
-            <div class="sub-blc">
-                <div class="icon">
-                    <img src="{{ URL::to('/assets/icons/laptop-circled.png') }}" alt="">
-                </div>
-                <div class="text"><h1>More FPS++</h1></div>
-            </div>
-            <div class="sub-blc">
-                <div class="icon">
-                    <img src="{{ URL::to('/assets/icons/support-circled.png') }}" alt="">
-                </div>
-                <div class="text"><h1>24/7 Support</h1></div>
-            </div>
-            <div class="sub-blc">
-                <div class="icon">
-                    <img src="{{ URL::to('/assets/icons/joy-circled.png') }}" alt="">
-                </div>
-                <div class="text"><h1>Strict Roleplay</h1></div>
-            </div>
+    <div class="2xl:w-[600px] w-[500px] h-fit min-h-fit  max-sm:col-span-2  border-4 border-b-0 border-C3 ">
+    <div class="h-fit p-2">
+        <img class="w-full h-60 object-cover border-b-8 border-C3" src="https://www.penguinize.com/public/assets/SiteImages/Events/1700009368.jpg" alt="">
+    </div>
+    <div class="h-fit flex  p-4 py-1 justify-between items-center  ">
+        <h1 class="text-xl font-int font-bold text-B">DasAuto</h1>
+        <div class="flex justify-between items-center">
+            <h2 class=" flex flex-row justify-center items-center ">
+                <span class="mr-2">
+
+                </span>
+                <span class="font-int font-light">Place</span>
+            </h2>
+
         </div>
-        <div id="BLC-2">
-            <div class="sub-blc">
-                <div class="mini-line">
-                    <img src="{{ URL::to('/assets/img/home-page/space-home.png') }}" alt="">
-                </div>
-                <div class="sub-content">
-                    <h1>
-                        +150 Registered user
-                    </h1>
-                </div>
-                <div class="mini-line">
-                    <img style="transform: rotateX(180deg)" src="{{ URL::to('/assets/img/home-page/space-home.png') }}" alt="">
-                </div>
-            </div>
-            <div class="sub-blc">
-                <div class="mini-line">
-                    <img src="{{ URL::to('/assets/img/home-page/space-home.png') }}" alt="">
-                </div>
-                <div class="sub-content">
-                    <h1>
-                        +70 Purchased car
-                    </h1>
-                </div>
-                <div class="mini-line">
-                    <img style="transform: rotateX(180deg)" src="{{ URL::to('/assets/img/home-page/space-home.png') }}" alt="">
-                </div>
-            </div>
-            <div class="sub-blc">
-                <div class="mini-line">
-                    <img src="{{ URL::to('/assets/img/home-page/space-home.png') }}" alt="">
-                </div>
-                <div class="sub-content">
-                    <h1>
-                        +50 Property purchased
-                    </h1>
-                </div>
-                <div class="mini-line">
-                    <img style="transform: rotateX(180deg)" src="{{ URL::to('/assets/img/home-page/space-home.png') }}" alt="">
-                </div>
-            </div>
-        </div>
+    </div>
+        <a class="font-bold flex items-center justify-center p-1 w-full mt-4 bg-C3 border-b-8 uppercase duration-700 hover:border-darkB border-C3 text-white  text-xl" href="https://www.penguinize.com/events/14">Check More</a>
+</div>
     </section>
     <section id="SEC-2">
         <section id="sub-sec-1">
             <div class="content">
-                <div class="text"><h1>Do you want to donate our server ?</h1></div>
+                <div class="text"><h1>Do you want to join our community ?</h1></div>
                 <div onclick="goPaypal()" class="btn">click here</div>
             </div>
         </section>
         <section id="sub-sec-2">
             <div class="title">
                 <div class="text">
-                    <h1>About SkyLine Rp</h1>
+                    <h1>About DasGas Auto</h1>
                     <div class="line"></div>
                 </div>
 
@@ -204,7 +72,7 @@ try {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
                 <div class="logo">
-                    <img src="{{ URL::to('/assets/img/home-page/logo.png') }}" alt="">
+                    <img src="{{ URL::to('/assets/home/logo.png') }}" alt="">
                 </div>
             </div>
         </section>
@@ -220,13 +88,13 @@ try {
             <div class="carousel">
                 <div class="owl-carousel owl-theme">
                     <div class="item">
-                        <img src="{{ URL::to('/assets/img/Banners/BNR-1.png') }}" alt="">
+                        <img src="{{ URL::to('/assets/home/G.jpeg') }}" alt="">
                     </div>
                     <div class="item">
-                        <img src="{{ URL::to('/assets/img/Banners/BNR-2.png') }}" alt="">
+                        <img src="{{ URL::to('/assets/home/v2.jpeg') }}" alt="">
                     </div>
                     <div class="item">
-                        <img src="{{ URL::to('/assets/img/Banners/BNR-3.png') }}" alt="">
+                        <img src="{{ URL::to('/assets/home/v3.jpeg') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -283,35 +151,9 @@ try {
                 </div>
             </div>
     </section>
-   <!-- <div id="PUB">
-        <div class="line"></div>
-        <div class="content">
-            <h1>©All rights reserved - SkyLine RolePlay - <?php echo date("Y"); ?></h1>
-            <h2>Designed and developed by <span id="hightlight" onclick="goYT()">YessineTrigui</span>.</h2>
-        </div>
-        <div class="line"></div>
-    </div>-->
+  
 </div>
-<script>
-    function openFb(){
-        window.open('https://facebook.com')
-    };
-    function openIg(){
-        window.open('https://instagram.com')
-    };
-    function openYt(){
-        window.open('https://youtube.com')
-    };
-    function openDs(){
-        window.open('https://discord.com')
-    };
-    function goPaypal(){
-        window.open('https://paypal.com')
-    };
-    function goYT(){
-        window.open('https://yessinetrigui.tn')
-    };
-    </script>
+
 
 
 @endsection

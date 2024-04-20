@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @yield('css-import')
     <link rel="shortcut icon" href="../lg.ico" type="image/x-icon">
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>SkyLine RP</title>
     <link rel="stylesheet" href="js/OwlCarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="js/OwlCarousel/owl.theme.default.css">
 
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">

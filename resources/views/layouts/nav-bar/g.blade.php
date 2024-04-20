@@ -12,9 +12,6 @@
 <div class="sub-navGuest">
     <div class="btn-space">
         <div onclick="goLogin()" class="btn" id="loginuser">
-            <div class="ico">
-                <img src="http://localhost:8000/assets/icons/user-regular.svg" alt="">
-            </div>
             <div class="text-btn">
                 <a href="{{route('user.login')}}">Login</a>
             </div>
