@@ -27,9 +27,9 @@
                 </svg>
 
                 @if (request()->routeIs('admin.chain.*'))
-                <span class="flex-1 ml-3 font-medium whitespace-nowrap">Chaines</span>
+                <span class="flex-1 ml-3 font-medium whitespace-nowrap">Agences</span>
                 @else
-                <span class="flex-1 ml-3 whitespace-nowrap">Chaines</span>
+                <span class="flex-1 ml-3 whitespace-nowrap">Agences</span>
                 @endif
             </a>
          </li>
@@ -42,9 +42,9 @@
 
 
                     @if (request()->routeIs('admin.hotel.*'))
-                    <span class="flex-1 ml-3 font-medium whitespace-nowrap">Hotels</span>
+                    <span class="flex-1 ml-3 font-medium whitespace-nowrap">Localisation</span>
                     @else
-                    <span class="flex-1 ml-3 whitespace-nowrap">Hotels</span>
+                    <span class="flex-1 ml-3 whitespace-nowrap">Localisation</span>
                     @endif
 
             </a>
@@ -78,9 +78,9 @@
              <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                 <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></svg>
                 @if (request()->routeIs('admin.products.*'))
-                <span class="flex-1 ml-3 whitespace-nowrap font-medium">Products</span>
+                <span class="flex-1 ml-3 whitespace-nowrap font-medium">véhicules</span>
                @else
-               <span class="flex-1 ml-3 whitespace-nowrap">Products</span>
+               <span class="flex-1 ml-3 whitespace-nowrap">véhicules</span>
                @endif
 
              </a>
@@ -109,13 +109,13 @@
             <ul id="collpase"  data-te-collapse-item class="hidden py-2 space-y-2">
 
                   <li>
-                     <a href="{{route('admin.configurations.offers.showAll')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Offers</a>
+                     <a href="{{route('admin.configurations.offers.showAll')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Offres spéciales</a>
                   </li>
                   <li>
-                     <a href="{{route('admin.configurations.RoomsTypes.showAll')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Rooms Types</a>
+                     <a href="{{route('admin.configurations.RoomsTypes.showAll')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Assurances et conditions</a>
                   </li>
                   <li>
-                    <a href="{{route('admin.configurations.zones.showAll')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Zones</a>
+                    <a href="{{route('admin.configurations.zones.showAll')}}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Avis clients</a>
                  </li>
             </ul>
          </li>
