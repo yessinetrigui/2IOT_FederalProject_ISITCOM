@@ -103,35 +103,35 @@
                     <a href="{{route('user.profile')}}">
                         <div class="ico"><img src="{{ URL::to('/assets/icons/user-regular.svg') }}" alt=""></div>
                         <div class="txt">My Profile</div>
-    
+
                     </a>
                 </li>
                 <li>
                     <a href="{{route('user.reports')}}">
                         <div class="ico"><img src="{{ URL::to('/assets/icons/bug-solid.svg') }}" alt=""></div>
                         <div class="txt">Reports</div>
-    
+
                     </a>
                 </li>
                <!-- <li>
                     <a href="routeuser.settings'">
                         <div class="ico"><img src="{{ URL::to('/assets/icons/edit-solid.svg') }}" alt=""></div>
                         <div class="txt">Settings</div>
-    
+
                     </a>
                 </li>-->
                 <li>
                     <a href="{{route('user.faq')}}">
                         <div class="ico"><img src="{{ URL::to('/assets/icons/question-circle-regular.svg') }}" alt=""></div>
                         <div class="txt">FAQ</div>
-    
+
                     </a>
                 </li>
                 <li>
                     <a href="{{route('user.logout')}}">
                         <div class="ico"><img src="{{ URL::to('/assets/icons/sign-out-alt-solid.svg') }}" alt=""></div>
                             <div class="txt">Logout</div>
-        
+
                     </a>
                 </li>
             </ul>

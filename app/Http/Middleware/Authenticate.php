@@ -12,6 +12,12 @@ class Authenticate extends Middleware
      */
     protected function redirectTo(Request $request): ?string
     {
-        return $request->expectsJson() ? null : route('admin.showLogin');
+        if (strpos("AgencyManager", $request->url) != -1) {
+            return route("AgencyManager.showLogin");
+        } else if (strpos("admin", $request->url) != -1) {
+            return route("admin.showLogin");
+        } else {
+            return $request->expectsJson() ? null : route('user.home');
+        }
     }
 }

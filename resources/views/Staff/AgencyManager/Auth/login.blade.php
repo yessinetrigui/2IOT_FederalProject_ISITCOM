@@ -17,27 +17,29 @@
 </head>
 
 <body>
-<div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 bg-black ">
-    <a href="#" class="flex items-center mb-6 text-2xl font-semibold  text-white">
+<div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 bg-black">
+    <a href="#" class="flex items-center mb-6 text-2xl font-semibold   text-white">
         <img class="w-[155px] mr-2" src="{{asset('assets/logos/logo.png')}}" alt="logo">
     </a>
-    <div class="w-full max-w-7xl rounded-lg shadow  border md:mt-0 sm:max-w-md xl:p-0  bg-gray-800  border-gray-700">
+    <div class="w-full rounded-lg shadow  border md:mt-0 sm:max-w-md xl:p-0  bg-gray-800  border-gray-700">
         <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
             <h1 class="text-xl font-bold leading-tight tracking-tight  md:text-2xl font-int text-white">
-                Login to Admin System
+                Login to Agency Manager System
             </h1>
 
-            <form class="space-y-4 md:space-y-6" action="{{route('admin.doLogin')}}" method="post">
+            <form class="space-y-4 md:space-y-6" action="{{route('AgencyManager.doLogin')}}" method="post">
+
+
                 @csrf
                 <div>
 
-                    <label for=""  class="block mb-2 text-sm font-medium  text-white">Username</label>
+                    <label for=""  class="block mb-2 text-sm font-medium   text-white">Email</label>
 
-                    <input type="text" name="username"  class=" border border-gray-300 sm:text-sm rounded-lg focus:ring-xprimary-600 focus:border-xprimary-600 block w-full p-2.5    border-gray-600  placeholder-gray-400  text-dark  focus:ring-blue-500  focus:border-blue-500" placeholder="Username" required="">
+                    <input type="text" name="email"  class=" border border-gray-300  sm:text-sm rounded-lg focus:ring-xprimary-600 focus:border-xprimary-600 block w-full p-2.5    border-gray-600  placeholder-gray-400  text-dark  focus:ring-blue-500  focus:border-blue-500" placeholder="name" required="">
                 </div>
                 <div>
                     <label for="password" class="block mb-2 text-sm font-medium   text-white">Password</label>
-                    <input type="password" name="password" id="password" placeholder="••••••••" class=" border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-xprimary-600 focus:border-xprimary-600 block w-full p-2.5   border-gray-600  placeholder-gray-400  text-dark  focus:ring-blue-500  focus:border-blue-500" required="">
+                    <input type="password" name="password" id="password" placeholder="••••••••" class=" border border-gray-300  sm:text-sm rounded-lg focus:ring-xprimary-600 focus:border-xprimary-600 block w-full p-2.5   border-gray-600  placeholder-gray-400  text-dark  focus:ring-blue-500  focus:border-blue-500" required="">
                 </div>
 
                 <button type="submit" class="w-full text-white bg-primary hover:bg-xprimary-700 focus:ring-4 focus:outline-none focus:ring-xprimary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  bg-xprimary-600  hover:bg-xprimary-700  focus:ring-xprimary-800">LOGIN</button>

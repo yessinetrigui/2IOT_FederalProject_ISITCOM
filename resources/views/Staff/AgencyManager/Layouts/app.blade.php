@@ -33,11 +33,11 @@
 
 
     <main class="flex w-full justify-between items-end">
-        @include('Staff.Admin.Layouts.sidebar')
+        @include('Staff.AgencyManager.Layouts.sidebar')
         <section class="bg-D1 w-[90%] h-screen flex flex-col items-center justify-start p-4">
 
             <header class="bg-white w-[95%] h-[8vh]">
-                @include('Staff.Admin.Layouts.navbar')
+                @include('Staff.AgencyManager.Layouts.navbar')
 
             </header>
 

@@ -30,8 +30,27 @@ module.exports = {
         'gray-300': '#d1d5db',
         'green-200': '#bbf7d0',
         'green-600': '#16a34a',
-        'gray-50': '#f9fafb'
+        'gray-50': '#f9fafb',
+        'C1': '#6E04D8',
+        'C2': '#1A0272',
+        'C3': '#3865F2',
 
+        'C4': '#0697F2',
+        'C5': '#06C7F2',
+        'D1': '#F7F6FD',
+        'D2': '#EDEDED',
+        'D3': '#f8fafc',
+        'primary': '#3865F2',
+        'secondery': '#6E04D8',
+        'third': '#141526',
+        'green': '#13ce66',
+        'green': '#13ce66',
+        'gray-dark': '#273444',
+        'gray': '#8492a6',
+        'gray-light': '#d3dce6',
+        'white': '#fff',
+        'black': '#000',
+        'red': '#D11643',
       },
       extend: {
 
