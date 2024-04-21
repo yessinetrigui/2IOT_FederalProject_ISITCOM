@@ -23,6 +23,44 @@ img{
     width: 100%;
     height: 100%;
 }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 100px; 
+    height: auto;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px; /* Adjust the spacing between menu items */
+}
+
+.menu ul li:last-child {
+    margin-right: 0; /* Remove margin from the last menu item */
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #555;
+}
+
 #HomePage .header{
    /* background-color: aqua;*/
     background-image: url("/assets/home/pg1.png");

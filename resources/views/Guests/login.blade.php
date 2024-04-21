@@ -12,14 +12,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 
 <body>
+<div class="background-image">
+        <img src="{{ URL::to('/assets/home/bi.png') }}" alt="">
+ </div>
     <div id="hide">
         <h1>NOT SUPPORTED FOR SCREEN UNDER 250PX SIZE</h1>
     </div>
     <div class="main-cont">
         <div class="sub-cont" id="form">
+       
             <div class="part">
                 <div class="txt">
                     <h1>Login</h1>
+                   
                     <div class="line"></div>
                 </div>
             </div>
@@ -61,7 +66,7 @@
             </div>
         </div>
         <div class="sub-cont">
-            <img src="{{ URL::to('/assets/img/login-page/mafiaguy.png') }}" alt="">
+            <img src="{{ URL::to('/assets/home/imglog.png') }}" alt="">
         </div>
     </div>
     <script>

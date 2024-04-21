@@ -20,7 +20,8 @@
     </div>
     <header class="header">
         <div class="BLC1">
-            <div class="title">
+         <div class="title">
+        
                 <div class="main-text">
                     <div class="text"><h1>Dasgas auto systems</h1></div>
                     <div class="line"></div>
@@ -69,7 +70,15 @@
             </div>
             <div class="content">
                 <div class="desc">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>"Welcome to DasGas Auto, your trusted destination for quality vehicles since 1992. With over three decades of experience in the automotive industry, we pride ourselves on offering exceptional service and a wide selection of vehicles to meet your needs.
+
+Established in 1992, DasGas Auto has grown to become a prominent name in the car dealership business, with five branches strategically located to serve our valued customers effectively. Our commitment to integrity, reliability, and customer satisfaction sets us apart in the competitive automotive market.
+
+At DasGas Auto, we believe in making your car-buying experience smooth, transparent, and enjoyable. Whether you're in the market for a new or pre-owned vehicle, our knowledgeable staff is dedicated to helping you find the perfect match. From compact cars to luxury SUVs, we have a diverse inventory to cater to various preferences and budgets.
+
+Beyond sales, our services extend to financing options, trade-ins, and comprehensive vehicle maintenance to ensure your investment continues to deliver optimal performance for years to come.
+
+Thank you for considering DasGas Auto for your automotive needs. We look forward to serving you at any of our five convenient locations and making your car-buying journey a memorable one.".</p>
                 </div>
                 <div class="logo">
                     <img src="{{ URL::to('/assets/home/logo.png') }}" alt="">
@@ -110,21 +119,24 @@
             <div class="BLC" id="BLC1">
                 <div class="SUB-BLC">
                     <div class="text">
-                        <h1>WHAT IS THIS SERVER?</h1>
+                        <h1>The Difference with Agence Borni</h1>
                     </div>
                     <div class="line"></div>
                     <div class="desc">
-                        <p>This is nextgaming GTA San Andreas Roleplay's modified server, which can be connected to with the MTA San Andreas client.
-                        </p>
+                        <p>We're not just any car rental agency. We work every day to make booking your car rental as simple as possible, with a customer service team available to assist you when you need it.</p>
+
                     </div>
                 </div>
                 <div class="SUB-BLC">
                     <div class="text">
-                        <h1>FROM THE SERVER?</h1>
+                        <h1>With Agence Borni, you'll enjoy:</h1>
                     </div>
                     <div class="line"></div>
                     <div class="desc">
-                        <p>The server is constantly being upgraded and updated. This will always create new opportunities for players thanks to the expanding gameplay. The server is constantly backed up and mature management awaits the players for the best gaming experience.
+                        <p>Multiple rental locations across the country
+Wide range of high-quality vehicles
+World-class customer service from our team
+Competitive rates and superior service
                         </p>
                     </div>
                 </div>
@@ -132,21 +144,21 @@
             <div class="BLC" id="BLC2">
                 <div class="SUB-BLC">
                     <div class="text">
-                        <h1>WHAT IS THIS SERVER?</h1>
+                        <h1>Recognized for several years</h1>
                     </div>
                     <div class="line"></div>
                     <div class="desc">
-                        <p>You have to act like you're in real life. The beauty of being able to play any role is that you can be a cop, a doctor, a criminal.
-                        </p>
+                        <p>  Agence Borni is your one-stop agency for rental cars, comparing prices from the best rental agencies in the country, ensuring you find the vehicle best suited to your needs. </p>
+
                     </div>
                 </div>
                 <div class="SUB-BLC">
                     <div class="text">
-                        <h1>HOW DO I PLAY?</h1>
+                        <h1>Flexibility in cancellation or reservation modification</h1>
                     </div>
                     <div class="line"></div>
                     <div class="desc">
-                        <p>You must have GTA:San Andreas and the free DOWNLOADABLE MTA:San Andreas client to connect to the server. You can find video help by <a href="#" id="hightlight">clicking here</a>.                    </p>
+                        <p>You can modify or cancel your car rental reservation through our website messaging or by phone. We have extended our cancellation policy (before 48 hours from the pick-up date) free of charge. To extend your car rental, you can call  agence Borni at +216 55 000 111 to extend your reservation.</p>
                     </div>
                 </div>
             </div>

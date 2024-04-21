@@ -5,6 +5,8 @@
     padding-bottom: 5vw;
 }
 #PROF .PIC_CONT{
+    clip-path: polygon(49% 100%, 100% 83%, 100% 0, 0 0, 0 83%);
+
     width: 100%;
     height: max-content;
     margin-bottom: 3vw;
@@ -14,7 +16,73 @@
     height: 100%;
 
 }
+.CARS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .block {
+    width: 300px;
+    height: 200px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .block:hover {
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .block h2 {
+    margin-top: 0;
+  }
+.PIC_CONT.position-relative {
+    position: relative; /* Ensure the container has a non-static position */
+}
 
+.text-overlay {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+
+.text-overlay.top {
+    top: 20%; /* Adjust the top value to position it higher */
+}
+
+.text-overlay.bottom {
+    top: 30%; /* Adjust the top value to position it lower */
+}
+
+.text-overlay h5 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.text-overlay.bottom .dancing-script {
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+}
+.dancing-script {
+    font-size: 72px !important;
+    font-weight: bold !important;
+  }
+  .block img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
 #PROF .PIC_CONT .eclp{
     width: 10vw;
     height: 10vw;

@@ -8,7 +8,7 @@
 }
 /****** styele of main body **/
 body{
-    background-image: url("/assets/img/login-page/login-bg.jpg");
+    background-image: url("/assets/home/bimg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,6 +18,22 @@ body{
     justify-content: center;
     align-items: center;
     }
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Ensure the image stays behind other content */
+        pointer-events: none; /* Allow clicking through the image to interact with form elements */
+    }
+    
+    .background-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure the image covers the entire container */
+    }
+
 /***** style of the container ****/
 .main-cont{
     background-color: #AA50AC;
