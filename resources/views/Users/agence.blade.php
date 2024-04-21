@@ -118,11 +118,11 @@
 <div id="crud-modal" tabindex="-1" aria-hidden="false" class="@if(session('errors')) flex  @else hidden @endif overflow-y-auto bg-[#00000084]   fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-0rem)] max-h-full">
     <div class="relative p-4 w-full max-w-md max-h-full ">
         <!-- Modal content -->
-        <div class="relative bg-C2 rounded-lg shadow  ">
+        <div class="relative bg-black rounded-lg shadow  ">
             <!-- Modal header -->
-            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-white">
+            <div class="flex items-center justify-between  border-b rounded-t border-white">
                 <h3 class="text-lg font-semibold text-white">
-                   ..........
+                   Order From Us Now !
                 </h3>
                 <button type="button" class=" bg-transparent text-white rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="crud-modal">
                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -131,40 +131,48 @@
                     <span class="sr-only">Close modal</span>
                 </button>
             </div>
-            <div class=" grid-cols-2 p-4 md:p-5 flex justify-between items-center">
-                <div class="col-span-2">
-                    <h1 for="name" class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">Item Name:</h1>
-                    <h2 for="name" class="block mb-2 text-sm font-bold text-gray-900 dark:text-white ml-2">{{$car->agencyId}}</h2>
-                </div>
-                <div class="w-1/4 h-1/4">
-                    <img alt="ecommerce" class="w-full h-auto object-cover object-center rounded border border-gray-200" src="{{ asset('public/assets/SiteImages/Shop/' .  $car->agencyId)}}">
-
-                </div>
-            </div>
-            <hr class="text-white bg-white w-[80%] brightness-75 mx-auto">
 
 
             <!-- Modal body -->
-            <form class="p-4 md:p-5" action="{{route("user.agence", [$car->id])}}" method="POST">
+            <form class="p-4 md:p-5" action="{{route("user.doOrder", [$car->id])}}" method="POST">
                 @csrf
                 <div class="grid gap-4 mb-4 grid-cols-2">
-                    <div class="col-span-2">
-                        @if($errors->has('fullName'))
+                    <div class="col-span-2 sm:col-span-1">
+                        @if($errors->has('lastName'))
                         <div class="alert alert-danger" role="alert">
-                        <div class="error text-[#d33838]">{{ $errors->first('fullName') }}</div>
+                        <div class="error text-[#d33838]">{{ $errors->first('lastName') }}</div>
                         </div>
                     @endif
-                        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Full Name</label>
-                        <input type="text" name="fullName" id="name" class="bg-C2 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Flen Ben Foulen" required>
+                        <label for="price" class=" mb-2 text-sm font-medium text-white bg-C2">Last Name</label>
+                        <input type="text" name="lastName" id="price" class="bg-C2 text-white border border-gray-300  text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder=" Ben Foulen" required >
+                    </div>
+                    <div class="col-span-2 sm:col-span-1">
+                        @if($errors->has('endDate'))
+                            <div class="alert alert-danger" role="alert">
+                            <div class="error text-[#d33838]">{{ $errors->first('firstName') }}</div>
+                            </div>
+                        @endif
+                        <label for="category" class=" mb-2 text-sm font-medium text-white">First Name</label>
+                        <input type="text" name="firstName" id="price" class="bg-C2 text-white border border-gray-300  text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Flen" required >
+                    </div>
+
+                    <div class="col-span-2">
+                        @if($errors->has('iDCardNumber'))
+                        <div class="alert alert-danger" role="alert">
+                        <div class="error text-[#d33838]">{{ $errors->first('iDCardNumber') }}</div>
+                        </div>
+                    @endif
+                        <label for="name" class=" mb-2 text-sm font-medium text-gray-900 dark:text-white">iD Card Number</label>
+                        <input type="text" name="iDCardNumber" id="name" class="bg-C2 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"  required>
                     </div>
                     <div class="col-span-2">
-                        @if($errors->has('PhoneNumber'))
+                        @if($errors->has('telephone'))
                         <div class="alert alert-danger" role="alert">
-                        <div class="error text-[#d33838]">{{ $errors->first('PhoneNumber') }}</div>
+                        <div class="error text-[#d33838]">{{ $errors->first('telephone') }}</div>
                         </div>
                     @endif
-                        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number:</label>
-                        <input type="text" name="PhoneNumber" id="name" class="bg-C2 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="+216 12 34 56 78" required>
+                        <label for="name" class=" mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number:</label>
+                        <input type="text" name="telephone" id="name" class="bg-C2 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="+216 12 34 56 78" required>
                     </div>
                     <div class="col-span-2">
                         @if($errors->has('email'))
@@ -172,29 +180,26 @@
                         <div class="error text-[#d33838]">{{ $errors->first('email') }}</div>
                         </div>
                     @endif
-                        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email Address:</label>
-                        <input type="text" name="email" id="name" class="bg-C2 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="flen@mail.com" required>
+                        <label for="name" class=" mb-2 text-sm font-medium text-gray-900 dark:text-white">Email Address:</label>
+                        <input type="text" name="email" id="name" class="bg-C2 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="flen@mail.com" required>
                     </div>
                     <div class="col-span-2 sm:col-span-1">
-                        @if($errors->has('qte'))
+                        @if($errors->has('startDate'))
                         <div class="alert alert-danger" role="alert">
-                        <div class="error text-[#d33838]">{{ $errors->first('qte') }}</div>
+                        <div class="error text-[#d33838]">{{ $errors->first('startDate') }}</div>
                         </div>
                     @endif
-                        <label for="price" class="block mb-2 text-sm font-medium text-white bg-C2">Qte</label>
-                        <input type="number" name="qte" id="price" class="bg-C2 text-white border border-gray-300  text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="1" value="1" required max="20" min="1">
+                        <label for="price" class=" mb-2 text-sm font-medium text-white bg-C2">start Date</label>
+                        <input type="date" name="startDate" id="price" class="bg-C2 text-white border border-gray-300  text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="1" value="1" required max="20" min="1">
                     </div>
                     <div class="col-span-2 sm:col-span-1">
-                        @if($errors->has('region'))
+                        @if($errors->has('endDate'))
                             <div class="alert alert-danger" role="alert">
-                            <div class="error text-[#d33838]">{{ $errors->first('region') }}</div>
+                            <div class="error text-[#d33838]">{{ $errors->first('endDate') }}</div>
                             </div>
                         @endif
-                        <label for="category" class="block mb-2 text-sm font-medium text-white">Region</label>
-                        <select name="region" id="category" class="bg-C2 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                            <option selected="">Select Region</option>
-
-                        </select>
+                        <label for="category" class=" mb-2 text-sm font-medium text-white">end Date</label>
+                        <input type="date" name="endDate" id="price" class="bg-C2 text-white border border-gray-300  text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="1" value="1" required max="20" min="1">
                     </div>
                     <div class="col-span-2">
                         @if($errors->has('address'))
@@ -202,8 +207,8 @@
                             <div class="error text-[#d33838]">{{ $errors->first('address') }}</div>
                             </div>
                         @endif
-                        <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Adress:</label>
-                        <textarea id="description" name="address" rows="4" class="block p-2.5 w-full text-sm bg-C2 text-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write Your Address here"></textarea>
+                        <label for="description" class=" mb-2 text-sm font-medium text-gray-900 dark:text-white">Adress:</label>
+                        <textarea id="description" name="address" rows="4" class=" p-2.5 w-full text-sm bg-C2 text-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write Your Address here"></textarea>
                     </div>
                 </div>
                 <button type="submit" class="text-white inline-flex items-center bg-blue-700 w-full hover:bg-C1 hover:text-C2 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center border-C1 border-2 dark:bg-blue-600 dark:hover:bg-C1 dark:focus:ring-C1">
@@ -217,4 +222,36 @@
 
 
 
+
+@if (session('message'))
+<!-- Main modal -->
+<div id="crud-modalx" tabindex="-1" aria-hidden="true" class="@if(session('message')) flex  @else hidden @endif overflow-y-auto bg-[#00000084]   fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-0rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-md max-h-full ">
+        <!-- Modal content -->
+        <div class="relative bg-black rounded-lg shadow  ">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-white">
+                <h3 class="text-lg font-semibold text-white">
+                    Order From Us Now !
+                </h3>
+                <button type="button" class=" bg-transparent text-white rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                >
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <div class=" grid-cols-2 p-4 md:p-5 flex justify-center flex-col items-center">
+
+                <h1 for="name" class=" mb-2 text-center text-lg font-bold font-pop text-[#e15a45]">  {{ session('message') }}</h1>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+@endif
 @endsection

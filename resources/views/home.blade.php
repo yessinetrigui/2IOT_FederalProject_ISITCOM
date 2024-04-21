@@ -36,17 +36,15 @@
         <section id="SEC-1">
 
             <div class="my-12">
-                <h1 class="font-monta font-extrabold lg:text-7xl text-4xl  text-center text-white">Check Our Latest Events
+                <h1 class="font-monta font-extrabold lg:text-7xl text-4xl  text-center text-white">Check Our Agencies
                 </h1>
-                <h2 class="font-pop font-light text-xl text-center text-white mt-4">Penguinize is a company that mainly
-                    targets
-                    clubs, associations, organizations and even companies</h2>
+                <h2 class="font-pop font-light text-xl text-center text-white mt-4"></h2>
 
-                <div class="flex my-12">
+                <div class="flex my-12 justify-center items-center gap-12">
                     @foreach ($agencies as $agency)
                     <div class="2xl:w-[600px] w-[500px] h-fit min-h-fit  max-sm:col-span-2  border-4 border-b-0 border-C3 ">
                         <div class="h-fit p-2">
-                            <img class="w-full h-60 object-covera border-b-8 border-C3" src="{{ URL::to('/assets/home/v2.jpeg') }}" alt="">
+                            <img class="w-full h-60 object-cover border-b-8 border-C3" src="{{ URL::to('/assets/home/v3.jpeg') }}" alt="">
                         </div>
                         <div class="h-fit flex  p-4 py-1 justify-between items-center  ">
                             <h1 class="text-xl font-int font-bold text-white">{{$agency->name}}</h1>
@@ -72,7 +70,7 @@
                     <div class="text">
                         <h1>Do you want to join our community ?</h1>
                     </div>
-                    <div onclick="goPaypal()" class="btn">click here</div>
+                    <div  class="btn">click here</div>
                 </div>
             </section>
             <section id="sub-sec-2">
@@ -132,9 +130,9 @@
         <section id="SEC-4">
             <div class="content">
                 <div class="text">
-                    <h1>do you want to join our server staff ? </h1>
+                    <h1>do you want to join our company staff ? </h1>
                 </div>
-                <div onclick="openDs()" class="btn">click here</div>
+                <div  class="btn">click here</div>
             </div>
         </section>
         <section id="SEC-5">
