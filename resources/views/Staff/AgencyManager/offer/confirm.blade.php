@@ -1,13 +1,13 @@
-@extends('Staff.Admin.Layouts.app')
+@extends('Staff.AgencyManager.Layouts.app')
 @section("title")
 Offers Add
 @endsection
 @section('content')
 
 @if ($para == "Delete")
-<form action="{{route('admin.configurations.offers.manage.doDelete', ['id'=>$id])}}" method="post">
+<form action="{{route('AgencyManager.offer.manage.doDelete', ['id'=>$id])}}" method="post">
     @else
-<form action="{{route('admin.configurations.offers.manage.doStop', ['id'=>$id])}}" method="post">
+<form action="{{route('AgencyManager.offer.manage.doStop', ['id'=>$id])}}" method="post">
     @endif
     @if ($para == "Delete")
     <h1>Confirm Delete for Offer ID: {{$id}}?</h1>

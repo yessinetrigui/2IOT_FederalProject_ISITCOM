@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Hash;
 class AgencyManagerManageCarsController extends Controller
 {
     public function showAll(){
-        $Cars = Car::all();
+        $Cars = Car::where("agencyID", "=", auth()->user()->id)->get();
         return view('Staff.AgencyManager.car.index', ["Cars"=>$Cars]);
     }
     public function showPerID($id){
@@ -30,19 +30,18 @@ class AgencyManagerManageCarsController extends Controller
             'brand' => ['required', 'string','min:2','max:255'],
             'bodyStyle' => ['required', 'string','min:2','max:255'],
             'picUrl1' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'picUrl2' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'picUrl3' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+
         ]);
 
         $Img1 = time().'-1.'.$req->picUrl1->extension();
         $req->picUrl1->move(public_path('SiteImages/Cars/'. auth()->user()->id), $Img1);
 
-        $Img2 = time().'-2.'.$req->picUrl2->extension();
+        /*$Img2 = time().'-2.'.$req->picUrl2->extension();
         $req->picUrl2->move(public_path('SiteImages/Cars/'. auth()->user()->id), $Img2);
 
         $Img3 = time().'-3.'.$req->picUrl3->extension();
         $req->picUrl3->move(public_path('SiteImages/Cars/'. auth()->user()->id), $Img3);
-
+*/
         car::create([
             'model'=>$req['model'],
             'description'=>$req['description'],
@@ -51,8 +50,8 @@ class AgencyManagerManageCarsController extends Controller
             'bodyStyle'=>$req['bodyStyle'],
             'agencyId'=>auth()->user()->id,
             'picUrl1'=>$Img1,
-            'picUrl2'=>$Img2,
-            'picUrl3'=>$Img3,
+            'picUrl2'=>null,
+            'picUrl3'=>null,
 
         ]);
         return redirect()->route('AgencyManager.car.showAll');
@@ -71,19 +70,18 @@ class AgencyManagerManageCarsController extends Controller
             'brand' => ['required', 'string','min:2','max:255'],
             'bodyStyle' => ['required', 'string','min:2','max:255'],
             'picUrl1' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'picUrl2' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'picUrl3' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+
 
         ]);
         $Img1 = time().'.'.$req->picUrl1->extension();
         $req->picUrl1->move(public_path('SiteImages/Cars/'. auth()->user()->id), $Img1);
 
-        $Img2 = time().'.'.$req->picUrl2->extension();
+      /*  $Img2 = time().'.'.$req->picUrl2->extension();
         $req->picUrl2->move(public_path('SiteImages/Cars/'. auth()->user()->id), $Img2);
 
         $Img3 = time().'.'.$req->picUrl3->extension();
         $req->picUrl3->move(public_path('SiteImages/Cars/'. auth()->user()->id), $Img3);
-
+*/
         car::where('id', $id)->update([
             'model'=>$req['model'],
             'description'=>$req['description'],
@@ -91,8 +89,8 @@ class AgencyManagerManageCarsController extends Controller
             'brand'=>$req['brand'],
             'bodyStyle'=>$req['bodyStyle'],
             'picUrl1'=>$Img1,
-            'picUrl2'=>$Img2,
-            'picUrl3'=>$Img3,
+            'picUrl2'=>null,
+            'picUrl3'=>null,
         ]);
         return redirect()->route('AgencyManager.car.showPerID', ['id'=>$id]);
     }

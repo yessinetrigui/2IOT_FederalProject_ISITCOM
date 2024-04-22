@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 class AgencyManagerManageOffersController extends Controller
 {
     public function showAll(){
-        $Offers = Offer::all();
+        $Offers = Offer::where("agencyID", "=", auth()->user()->id)->get();
         return view('Staff.AgencyManager.offer.index', ["Offres"=>$Offers]);
     }
 
@@ -22,8 +22,8 @@ class AgencyManagerManageOffersController extends Controller
 
     }
     public function showAdd(){
-        $cars = Car::all();
-        return view('Staff.AgencyManager.offer.create',['offer'=>null, "cars"=>$cars]);
+        $Cars = Car::where("agencyID", "=", auth()->user()->id)->get();
+        return view('Staff.AgencyManager.offer.create',['offer'=>null, "cars"=>$Cars]);
     }
     public function doAdd(Request $req){
 
@@ -48,7 +48,7 @@ class AgencyManagerManageOffersController extends Controller
     }
     public function showUpdate($id){
         $offer = offer::findorFail($id);
-        $cars = Car::all();
+        $cars = Car::where("agencyID", "=", auth()->user()->id)->get();
         return view('Staff.AgencyManager.offer.create',["offer"=>$offer, "cars"=>$cars]);
     }
     public function doUpdate(Request $req, $id){

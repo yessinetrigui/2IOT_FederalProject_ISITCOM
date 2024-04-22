@@ -65,14 +65,6 @@ Car Add
         <label>cPic1:* </label>
         <input type="file" name="picUrl1" class="form-control">
     </div>
-    <div>
-        <label>cPic2: </label>
-        <input  type="file" name="picUrl2" class="form-control">
-    </div>
-    <div>
-        <label>cPic3: </label>
-        <input  type="file" name="picUrl3" class="form-control">
-    </div>
 
 
     @if ($car==null)

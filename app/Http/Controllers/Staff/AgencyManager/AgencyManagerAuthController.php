@@ -23,6 +23,7 @@ class AgencyManagerAuthController extends Controller
             'password'=>$req->password,
         ];
         if (Auth::guard('AgencyManager')->attempt($crds)){
+
             return redirect()->route('AgencyManager.showPanel');
         }else{
             return redirect()->route('AgencyManager.showLogin');

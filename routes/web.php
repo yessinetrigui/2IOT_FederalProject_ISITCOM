@@ -34,7 +34,7 @@ Route::name('user.')->group(function () {
 
     Route::get('/', [UserController::class, 'show_home'])->name('home');
     Route::get('/agence/{id}', [UserController::class, 'show_agence'])->name('agence');
-    Route::post('/order/{id}', [UserController::class, 'doOrder'])->name('doOrder');
+    Route::post('/order', [UserController::class, 'doOrder'])->name('doOrder');
 
     Route::middleware(['guest:web'])->group(function () {
         //not logged in

@@ -8,7 +8,7 @@
 @endsection
 
 @section('title')
-    SkyLine
+    DasGas
 @endsection
 
 @section('content')

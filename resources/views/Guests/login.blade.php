@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login SkyLine</title>
+    <title>Login DasGas</title>
     <link rel="stylesheet" href="css/login.css">
     <link rel="shortcut icon" href="lg.ico" type="image/x-icon"></head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,11 +20,11 @@
     </div>
     <div class="main-cont">
         <div class="sub-cont" id="form">
-       
+
             <div class="part">
                 <div class="txt">
                     <h1>Login</h1>
-                   
+
                     <div class="line"></div>
                 </div>
             </div>

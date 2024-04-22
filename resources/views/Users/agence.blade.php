@@ -25,7 +25,7 @@
             <div class="text-overlay bottom">
 
                 <h6 class="dancing-script" style="color: white; font-size: 60px; font-weight: lighter;"><strong <strong
-                        style="color: white;">Agence Borni</strong></h6>
+                        style="color: white;">{{ $agency->name }} Agency</strong></h6>
             </div>
 
 
@@ -81,12 +81,12 @@
                 </div>
                 <div class="line"></div>
             </div>
-            <div class="flex">
+            <div class="flex justify-around items-center lg:flex-row flex-col ">
                 @foreach ($cars as $car)
                     <div
                         class="w-[320px] h-[550px]  relative hover:shadow-2xl hover:scale-105 duration-500 hover:-translate-y-3">
                         <img class="w-full h-full brightness-75 object-cover"
-                            src="{{ URL::to('/SiteImages/Cars/' . $car->agencyId ."/". $car->picUrl1 ) }}" alt="">
+                            src="{{ URL::to('/public/SiteImages/Cars/' . $car->agencyId ."/". $car->picUrl1 ) }}" alt="">
                         <h1
                             class="font-monta font-black text-white uppercase text-2xl text-center break-words absolute top-10 left-0 right-0">
                             {{$car->model}}</h1>
@@ -94,7 +94,7 @@
                             class="font-monta font-normal text-white uppercase text-xl top-28 text-center break-words absolute  left-0 right-0">
                             {{$car->brand}}</h1>
 
-                            <button data-modal-target="crud-modal" data-modal-toggle="crud-modal"  class="absolute bottom-0 left-0 w-full h-fit  ">
+                            <button data-modal-target="crud-modal" data-modal-toggle="crud-modal" onclick="document.getElementById('id').value = {{$car->id}}"  class="absolute bottom-0 left-0 w-full h-fit  ">
 
                                 <div class=" bg-C3 px-8 py-4   border-white border-b-4 flex justify-center items-center">
                                     <h1 class=" text-white uppercase font-monta font-black text-2xl ">Order Now !</h1>
@@ -134,7 +134,7 @@
 
 
             <!-- Modal body -->
-            <form class="p-4 md:p-5" action="{{route("user.doOrder", [$car->id])}}" method="POST">
+            <form class="p-4 md:p-5" action="{{route("user.doOrder")}}" method="POST">
                 @csrf
                 <div class="grid gap-4 mb-4 grid-cols-2">
                     <div class="col-span-2 sm:col-span-1">
@@ -143,6 +143,7 @@
                         <div class="error text-[#d33838]">{{ $errors->first('lastName') }}</div>
                         </div>
                     @endif
+                    <input type="hidden" name="id" id="id">
                         <label for="price" class=" mb-2 text-sm font-medium text-white bg-C2">Last Name</label>
                         <input type="text" name="lastName" id="price" class="bg-C2 text-white border border-gray-300  text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder=" Ben Foulen" required >
                     </div>

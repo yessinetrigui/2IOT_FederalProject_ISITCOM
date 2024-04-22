@@ -8,7 +8,7 @@
 <script src="../../js/user.js"></script>
 @endsection
 @section('pagetitle')
-    SkyLine News   
+    DasGas News
 @endsection
 @section('content')
     <div id="user-cont">
@@ -18,7 +18,7 @@
                     <h1>@yield('title')</h1>
                 </div>
                 <div class="line"></div>
-            
+
         </div>
 
         </div>

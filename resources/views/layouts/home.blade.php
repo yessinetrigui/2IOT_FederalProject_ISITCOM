@@ -7,7 +7,7 @@
     @yield('css-import')
     <link rel="shortcut icon" href="../lg.ico" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>SkyLine RP</title>
+    <title>DasGas </title>
     <link rel="stylesheet" href="js/OwlCarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="js/OwlCarousel/owl.theme.default.css">
 

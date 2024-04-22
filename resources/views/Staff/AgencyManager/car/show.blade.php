@@ -15,9 +15,7 @@ car Manager
         <h2 class="font-pop text-lg">capacity: <span class="font-semibold"> {{$car->capacity}} </span>   </h2>
         <h2 class="font-pop text-lg">description: <span class="font-semibold"> {{$car->description}} </span>   </h2>
         <div class="flex justify-around">
-            <img class="w-80 h-auto object-cover" src="{{ URL::to('/SiteImages/Cars/' . auth()->user()->id ."/". $car->picUrl1 ) }}" alt="pic 1">
-        <img class="w-80 h-auto object-cover" src="{{ URL::to('/SiteImages/Cars/' . auth()->user()->id ."/". $car->picUrl2 ) }}" alt="pic 2">
-        <img class="w-80 h-auto object-cover" src="{{ URL::to('/SiteImages/Cars/' . auth()->user()->id ."/". $car->picUrl3 ) }}" alt="pic 3">
+            <img class="w-80 h-auto object-cover" src="{{ URL::to('/public/SiteImages/Cars/' . auth()->user()->id ."/". $car->picUrl1 ) }}" alt="pic 1">
         </div>
         @if ($car->status == '1')
         <h2 class="font-pop text-lg">Status:<span class="font-semibold"> ACTIVE </span> </h2>

@@ -23,7 +23,7 @@ class UserController extends Controller
         return view("Users.agence", ["agency"=>$agency, "cars"=>$cars]);
     }
 
-    public function doOrder(Request $req, $id){
+    public function doOrder(Request $req){
 
         $req->validate([
             'lastName' => ['required', 'string','min:1','max:255'],
@@ -46,6 +46,7 @@ class UserController extends Controller
         ]);
         $idOff = Offer::where('startDate', '<=', $req->startDate)
         ->where('endDate', '>=', $req->endDate)
+        ->where('carId', '=', $req->id)
         ->value('id');
         if($idOff==null){
             return Redirect::back()->with('message','Not Available!');
